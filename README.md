@@ -1,0 +1,1 @@
+Documentation of Schematics and PCB see [this](Hardware Development\02_Schematics and PCB\Dokumentasi.md)!
