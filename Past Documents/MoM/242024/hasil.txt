@@ -1,0 +1,15 @@
+Hasil ukur Baby Incubator Test
+Date:12-12-2024
+Time:00:45:59
+Data, T1, T2, T3, T4, T5, T6, Humadity, Air Speed, Sound Level
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+2, 998, 998, 998, 998, 998, 998, 998, 0, 86
+
+Hasil ukur Baby Incubator Test
+Date:12-12-2024
+Time:00:45:59
+Data, T1, T2, T3, T4, T5, T6, Humadity, Air Speed, Sound Level
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+2, 998, 998, 998, 998, 998, 998, 998, 0, 85
+3, 998, 998, 998, 998, 998, 998, 998, 0, 52
+4, 998, 998, 998, 998, 998, 998, 998, 0, 49

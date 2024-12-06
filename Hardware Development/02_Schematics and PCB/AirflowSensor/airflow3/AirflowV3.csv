@@ -1,0 +1,10 @@
+Reference;Value;Datasheet;Footprint;Qty;DNP
+C21, C22;220nF;~;Capacitor_THT:C_Rect_L9.0mm_W3.3mm_P7.50mm_MKT;2;
+J21;PT100 Class A;~;Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical;1;
+J22;Electret;~;Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical;1;
+J23;OUT;~;Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical;1;
+R21, R22, R25, R26;120R 1W 1%;~;Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;4;
+R23, R27;2K2 1/4W 1%;~;Project_Fania_Ersa:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_HorBigPad;2;
+R24, R28;47R 1W 1%;~;Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;2;
+RV11, RV12;100R;~;Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical;2;
+U21;TL072;http://www.ti.com/lit/ds/symlink/tl071.pdf;Package_DIP:DIP-8_W7.62mm_LongPads;1;
