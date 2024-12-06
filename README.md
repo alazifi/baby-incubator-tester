@@ -1,1 +1,1 @@
-Documentation of Schematics and PCB see [this](Hardware Development/02_Schematics and PCB)!
+Documentation of Schematics and PCB see [this](Hardware%20Development/02_Schematics%20and%20PCB/Dokumentasi.md)!
