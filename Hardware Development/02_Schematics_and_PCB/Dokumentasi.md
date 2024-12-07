@@ -1,4 +1,4 @@
-# MAIN PPPPPCBBBBB DOCUMENTATION
+# MAIN PCB DOCUMENTATION
 
 ## Guide for Versioning
 Semantic versioning uses this format:
