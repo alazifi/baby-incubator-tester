@@ -60,20 +60,21 @@ Versi 5.1.1
 ##### Minor Changes
 1. Changing pin connections of J8:
 
-	|J8 PINS|V4.3.1| V5.1.1 |
-	|:------:|:------:|:------:|
-	|1|75VDC|GAIN1|
-	|2|GND|GAIN0|
-	|3|GND|Sens_Indicator|
-	|4|SCL|GND|
-	|5|SDA|5VDCL|
+	| J8 PINS | V4.3.1 |     V5.1.1     |
+	|:-------:|:------:|:--------------:|
+	|    1    | 75VDC  |     GAIN1      |
+	|    2    |  GND   |     GAIN0      |
+	|    3    |  GND   | Sens_Indicator |
+	|    4    |  SCL   |      GND       |
+	|    5    |  SDA   |     5VDCL      |
+
 2. Changing text layout
 3. Changing connections
 	- U1
-		|U1 PINS|V4.3.1| V5.1.1 |
-		|:------:|:------:|:------:|
-		|7 (VCC)|5VDC|5VDCB|
-		|20 (AVCC)|5VDC|5VDCB|
+		|  U1 PINS  | V4.3.1 | V5.1.1 |
+		|:---------:|:------:|:------:|
+		|  7 (VCC)  |  5VDC  | 5VDCB  |
+		| 20 (AVCC) |  5VDC  | 5VDCB  |
 	- 5VDC connenction at Pin 3 U2 (VI) to 5VDCL
 	- 5VDC connection at pin 4 U5 (OUT+) to 5VDCB
 4. Changing hole position 			
@@ -85,32 +86,30 @@ Versi 5.1.1
 2. Adding unit for all values
 3. Changing pin connections
 	- J7
-		|J7 PINS|V4.3.1| V5.1.1 |
-		|:------:|:------:|:------:|
-		|1|GND|5VDCL|
-	    |4|5VDC|GND|
+  | J7 PINS | V4.3.1 | V5.1.1 |
+  | :-----: | :----: | :----: |
+  |    1    |  GND   | 5VDCL  |
+  |    4    |  5VDC  |  GND   |
 	- PCA9548A
-		|PCA9548 PINS|V4.3.1| V5.1.1 |
-		|:------:|:------:|:------:|
-		|13 (SD2)|SDA2|SDA0|
-		|14 (SC2)|SCL2|SCL0|
-		|15 (SD3)|SDA1|SDA1|
-		|16 (SC3)|SCL1|SCL1|
-		|17 (SD4)|SDA0|SDA2|
-		|18 (SC4)|SCL0|SCL2|
-		|19 (SD5)|SDA5|SDA3|
-		|20 (SC5)|SCL5|SCL3|
-		|21 (SD6)|SDA3|SDA4|
-		|22 (SC6)|SCL3|SCL4|
-		|23 (SD7)|SDA4|SDA5|
- 		|24 (SC7)|SCL4|SCL5|
+  | PCA9548 PINS | V4.3.1 | V5.1.1 |
+  | :----------: | :----: | :----: |
+  |   13 (SD2)   |  SDA2  |  SDA0  |
+  |   14 (SC2)   |  SCL2  |  SCL0  |
+  |   15 (SD3)   |  SDA1  |  SDA1  |
+  |   16 (SC3)   |  SCL1  |  SCL1  |
+  |   17 (SD4)   |  SDA0  |  SDA2  |
+  |   18 (SC4)   |  SCL0  |  SCL2  |
+  |   19 (SD5)   |  SDA5  |  SDA3  |
+  |   20 (SC5)   |  SCL5  |  SCL3  |
+  |   21 (SD6)   |  SDA3  |  SDA4  |
+  |   22 (SC6)   |  SCL3  |  SCL4  |
+  |   23 (SD7)   |  SDA4  |  SDA5  |
+  |   24 (SC7)   |  SCL4  |  SCL5  |
 3. Changing values
-	<div align="center">
-	|V4.3.1|V4.3.1|
-	|:------:|:------:|
-	|StepDownLM2596|Step_Down_DCDC|
-	|TP3|12V|
-	</div>
+ |     V4.3.1     |     V4.3.1     |
+ | :------------: | :------------: |
+ | StepDownLM2596 | Step_Down_DCDC |
+ |      TP3       |      12V       |
 
 <a name="V4.4.1"></a>
 
@@ -132,29 +131,29 @@ Versi 4.4.1
 ##### Patch Changes:
 1. Changing references
 		<div align="center">
-	|V4.3.1|V4.4.1|
-	|:------:|:------:|
-	|J13|J12|
-	|J12|J11|
-	|J10|J9|
-	|J11|J10|
-	|C2|C4|
-	|C4|C5|
-	|C5|C1|
-	|C7|C2|
-	|J8|J7|
-	|J9|J8|
+ | V4.3.1 | V4.4.1 |
+ | :----: | :----: |
+ |  J13   |  J12   |
+ |  J12   |  J11   |
+ |  J10   |   J9   |
+ |  J11   |  J10   |
+ |   C2   |   C4   |
+ |   C4   |   C5   |
+ |   C5   |   C1   |
+ |   C7   |   C2   |
+ |   J8   |   J7   |
+ |   J9   |   J8   |
 	</div>
 2. Eliminating J7 with value I2C
 3. Changing pin connections
 	- J7
 			<div align="center">
-		|J7 PINS|V4.3.1|V4.4.1|
-		|:---:|:------:|:------:|
-		|1|5VDC|GND|
-		|2|GND|TX|
-		|3|TX|RX|
-		|4|RX|5VDC|
+  | J7 PINS | V4.3.1 | V4.4.1 |
+  | :-----: | :----: | :----: |
+  |    1    |  5VDC  |  GND   |
+  |    2    |  GND   |   TX   |
+  |    3    |   TX   |   RX   |
+  |    4    |   RX   |  5VDC  |
 		</div>
 	- J8
 			<div align="center">
