@@ -106,10 +106,11 @@ Versi 5.1.1
   |   23 (SD7)   |  SDA4  |  SDA5  |
   |   24 (SC7)   |  SCL4  |  SCL5  |
 3. Changing values
- |     V4.3.1     |     V4.3.1     |
- | :------------: | :------------: |
- | StepDownLM2596 | Step_Down_DCDC |
- |      TP3       |      12V       |
+
+ |   V4.3.1     |    V4.3.1    |
+ |:------------:|:------------:|
+ |StepDownLM2596|Step_Down_DCDC|
+ |      TP3     |     12V      |
 
 <a name="V4.4.1"></a>
 
