@@ -454,7 +454,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "IncubatorTesterV8.kicad_pro",
+    "filename": "bit-v5.1.1.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -489,7 +489,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "KBI_Gerber_V7/",
+      "plot": "gerber-bit-v5.1.1/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "KBI_PCB_V8.step",

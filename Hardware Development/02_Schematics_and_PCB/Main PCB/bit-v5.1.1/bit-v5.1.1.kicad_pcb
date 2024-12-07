@@ -76,7 +76,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "KBI_Gerber_V7/")
+			(outputdirectory "gerber-bit-v5.1.1/")
 		)
 	)
 	(net 0 "")
