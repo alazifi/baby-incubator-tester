@@ -1,4 +1,3 @@
-```bash
 # MAIN PCB DOCUMENTATION
 
 ## Guide for Versioning
@@ -77,7 +76,7 @@ A more reliable device is introduced in this version:
 		| :-------: | :----: | :----: |
 		|  7 (VCC)  |  5VDC  | 5VDCB  |
 		| 20 (AVCC) |  5VDC  | 5VDCB  |
-	- 5VDC connection at Pin 3 U2 (VI) to 5VDCL
+	- 5VDC connection at pin 3 U2 (VI) to 5VDCL
 	- 5VDC connection at pin 4 U5 (OUT+) to 5VDCB
 4. Changing hole position 			
 5. Changing value of IC-SD to 74HCT125
@@ -532,4 +531,3 @@ The legacy system version of Fania Ersa's PCB that has features:
 #### :zap: PCB:
 1. Dimension is 128.5 mm x 74.3 mm
 2. Dedicated port for uploading program
-```
