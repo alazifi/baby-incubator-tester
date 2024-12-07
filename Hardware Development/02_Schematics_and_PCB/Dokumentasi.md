@@ -59,7 +59,7 @@ Versi 5.1.1
 
 ##### Minor Changes
 1. Changing pin connections of J8:
-		<div align="center">
+
 	|J8 PINS|V4.3.1| V5.1.1 |
 	|:------:|:------:|:------:|
 	|1|75VDC|GAIN1|
@@ -67,16 +67,13 @@ Versi 5.1.1
 	|3|GND|Sens_Indicator|
 	|4|SCL|GND|
 	|5|SDA|5VDCL|
-	</div>
 2. Changing text layout
 3. Changing connections
 	- U1
-			<div align="center">
 		|U1 PINS|V4.3.1| V5.1.1 |
 		|:------:|:------:|:------:|
 		|7 (VCC)|5VDC|5VDCB|
 		|20 (AVCC)|5VDC|5VDCB|
-		</div>
 	- 5VDC connenction at Pin 3 U2 (VI) to 5VDCL
 	- 5VDC connection at pin 4 U5 (OUT+) to 5VDCB
 4. Changing hole position 			
@@ -88,14 +85,11 @@ Versi 5.1.1
 2. Adding unit for all values
 3. Changing pin connections
 	- J7
-			<div align="center">
 		|J7 PINS|V4.3.1| V5.1.1 |
 		|:------:|:------:|:------:|
 		|1|GND|5VDCL|
 	    |4|5VDC|GND|
-		</div>
 	- PCA9548A
-			<div align="center">
 		|PCA9548 PINS|V4.3.1| V5.1.1 |
 		|:------:|:------:|:------:|
 		|13 (SD2)|SDA2|SDA0|
@@ -110,9 +104,8 @@ Versi 5.1.1
 		|22 (SC6)|SCL3|SCL4|
 		|23 (SD7)|SDA4|SDA5|
  		|24 (SC7)|SCL4|SCL5|
-		</div>
 3. Changing values
-		<div align="center">
+	<div align="center">
 	|V4.3.1|V4.3.1|
 	|:------:|:------:|
 	|StepDownLM2596|Step_Down_DCDC|
