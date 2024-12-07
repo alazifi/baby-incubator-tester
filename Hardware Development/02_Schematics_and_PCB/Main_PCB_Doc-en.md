@@ -353,7 +353,9 @@ More power source for sensor is added and dedicated to power the sensor in this 
 2. Adding 1 mounting hole 
 3. Chaging hole position with reference to the top-left corner, with the socket positioned in the bottom-right corner
 
-# V3.1.1 <a name="V3.1.1"></a>
+<a name="V3.1.1"></a>
+
+# V3.1.1
 #### Creator: Mr. Haidar
 ### :package: Description
 The third version of Baby Incubator Tester provides stronger charging port that enables a simpler plug and play for recharging device.
