@@ -59,20 +59,18 @@ Versi 5.1.1
 
 ##### Minor Changes
 1. Changing pin connections of J8:
-
-	| J8 PINS | V4.3.1 |     V5.1.1     |
-	|:-------:|:------:|:--------------:|
-	|    1    | 75VDC  |     GAIN1      |
-	|    2    |  GND   |     GAIN0      |
-	|    3    |  GND   | Sens_Indicator |
-	|    4    |  SCL   |      GND       |
-	|    5    |  SDA   |     5VDCL      |
-
+		| J8 PINS | V4.3.1 |     V5.1.1     |
+		| :-----: | :----: | :------------: |
+		|    1    | 75VDC  |     GAIN1      |
+		|    2    |  GND   |     GAIN0      |
+		|    3    |  GND   | Sens_Indicator |
+		|    4    |  SCL   |      GND       |
+		|    5    |  SDA   |     5VDCL      |
 2. Changing text layout
 3. Changing connections
 	- U1
 		|  U1 PINS  | V4.3.1 | V5.1.1 |
-		|:---------:|:------:|:------:|
+		| :-------: | :----: | :----: |
 		|  7 (VCC)  |  5VDC  | 5VDCB  |
 		| 20 (AVCC) |  5VDC  | 5VDCB  |
 	- 5VDC connenction at Pin 3 U2 (VI) to 5VDCL
@@ -86,31 +84,30 @@ Versi 5.1.1
 2. Adding unit for all values
 3. Changing pin connections
 	- J7
-  | J7 PINS | V4.3.1 | V5.1.1 |
-  | :-----: | :----: | :----: |
-  |    1    |  GND   | 5VDCL  |
-  |    4    |  5VDC  |  GND   |
+    	| J7 PINS | V4.3.1 | V5.1.1 |
+    	| :-----: | :----: | :----: |
+    	|    1    |  GND   | 5VDCL  |
+    	|    4    |  5VDC  |  GND   |
 	- PCA9548A
-  | PCA9548 PINS | V4.3.1 | V5.1.1 |
-  | :----------: | :----: | :----: |
-  |   13 (SD2)   |  SDA2  |  SDA0  |
-  |   14 (SC2)   |  SCL2  |  SCL0  |
-  |   15 (SD3)   |  SDA1  |  SDA1  |
-  |   16 (SC3)   |  SCL1  |  SCL1  |
-  |   17 (SD4)   |  SDA0  |  SDA2  |
-  |   18 (SC4)   |  SCL0  |  SCL2  |
-  |   19 (SD5)   |  SDA5  |  SDA3  |
-  |   20 (SC5)   |  SCL5  |  SCL3  |
-  |   21 (SD6)   |  SDA3  |  SDA4  |
-  |   22 (SC6)   |  SCL3  |  SCL4  |
-  |   23 (SD7)   |  SDA4  |  SDA5  |
-  |   24 (SC7)   |  SCL4  |  SCL5  |
-3. Changing values
-
- |   V4.3.1     |    V4.3.1    |
- |:------------:|:------------:|
- |StepDownLM2596|Step_Down_DCDC|
- |      TP3     |     12V      |
+		| PCA9548 PINS | V4.3.1 | V5.1.1 |
+		| :----------: | :----: | :----: |
+		|   13 (SD2)   |  SDA2  |  SDA0  |
+		|   14 (SC2)   |  SCL2  |  SCL0  |
+		|   15 (SD3)   |  SDA1  |  SDA1  |
+		|   16 (SC3)   |  SCL1  |  SCL1  |
+		|   17 (SD4)   |  SDA0  |  SDA2  |
+		|   18 (SC4)   |  SCL0  |  SCL2  |
+		|   19 (SD5)   |  SDA5  |  SDA3  |
+		|   20 (SC5)   |  SCL5  |  SCL3  |
+		|   21 (SD6)   |  SDA3  |  SDA4  |
+		|   22 (SC6)   |  SCL3  |  SCL4  |
+		|   23 (SD7)   |  SDA4  |  SDA5  |
+		|   24 (SC7)   |  SCL4  |  SCL5  |
+1. Changing values
+	|     V4.3.1     |     V4.3.1     |
+	| :------------: | :------------: |
+	| StepDownLM2596 | Step_Down_DCDC |
+	|      TP3       |      12V       |
 
 <a name="V4.4.1"></a>
 
@@ -131,38 +128,32 @@ Versi 4.4.1
 
 ##### Patch Changes:
 1. Changing references
-		<div align="center">
- | V4.3.1 | V4.4.1 |
- | :----: | :----: |
- |  J13   |  J12   |
- |  J12   |  J11   |
- |  J10   |   J9   |
- |  J11   |  J10   |
- |   C2   |   C4   |
- |   C4   |   C5   |
- |   C5   |   C1   |
- |   C7   |   C2   |
- |   J8   |   J7   |
- |   J9   |   J8   |
-	</div>
+	| V4.3.1 | V4.4.1 |
+	| :----: | :----: |
+	|  J13   |  J12   |
+	|  J12   |  J11   |
+	|  J10   |   J9   |
+	|  J11   |  J10   |
+	|   C2   |   C4   |
+	|   C4   |   C5   |
+	|   C5   |   C1   |
+	|   C7   |   C2   |
+	|   J8   |   J7   |
+	|   J9   |   J8   |
 2. Eliminating J7 with value I2C
 3. Changing pin connections
 	- J7
-			<div align="center">
-  | J7 PINS | V4.3.1 | V4.4.1 |
-  | :-----: | :----: | :----: |
-  |    1    |  5VDC  |  GND   |
-  |    2    |  GND   |   TX   |
-  |    3    |   TX   |   RX   |
-  |    4    |   RX   |  5VDC  |
-		</div>
+		| J7 PINS | V4.3.1 | V4.4.1 |
+		| :-----: | :----: | :----: |
+		|    1    |  5VDC  |  GND   |
+		|    2    |  GND   |   TX   |
+		|    3    |   TX   |   RX   |
+		|    4    |   RX   |  5VDC  |
 	- J8
-			<div align="center">
-		|J8 PINS|V4.3.1|V4.4.1|
-		|:---:|:------:|:------:|
-		|4|AUX1|SCL|
-		|5|AUX2|SDA|
-		</div>
+		| J8 PINS | V4.3.1 | V4.4.1 |
+		| :-----: | :----: | :----: |
+		|    4    |  AUX1  |  SCL   |
+		|    5    |  AUX2  |  SDA   |
 	- Exchange MISO label and MISO_L label
 
 #### :zap: PCB:
@@ -194,47 +185,35 @@ Versi 4.3.1
 	- 5 pin J7 to 4 pin J7
 	- 4 pin J9 to 5 pin J9
 2. Changing values:
-	<div align="center">
-
-	|V4.2.1|V4.3.1|
-	|:------:|:------:|
-	|AUX|I2C|
-	|AUX2|AUX|
-	</div>
-
+	| V4.2.1 | V4.3.1 |
+	| :----: | :----: |
+	|  AUX   |  I2C   |
+	|  AUX2  |  AUX   |
 3. Changing pin connections:
 	- J7
-			<div align="center">
-		|J7 PINS|V4.2.1| V4.3.1 |
-		|:------:|:------:|:------:|
-		|2|GND1|GND|
-		|3|GND2|SCL|
-		|4|SCL|SDA|
-		</div>
+		| J7 PINS | V4.2.1 | V4.3.1 |
+		| :-----: | :----: | :----: |
+		|    2    |  GND1  |  GND   |
+		|    3    |  GND2  |  SCL   |
+		|    4    |  SCL   |  SDA   |
 	- J9
-			<div align="center">
-		|J9 PINS|V4.2.1| V4.3.1 |
-		|:------:|:------:|:------:|
-		|3|AUX1|GND|
-		|4|AUX2|AUX1|
-		|5|no pin|AUX2|
-		</div>
+		| J9 PINS | V4.2.1 | V4.3.1 |
+		| :-----: | :----: | :----: |
+		|    3    |  AUX1  |  GND   |
+		|    4    |  AUX2  |  AUX1  |
+		|    5    | no pin |  AUX2  |
 	- J13
-			<div align="center">
-		|J9 PINS|V4.2.1| V4.3.1 |
-		|:------:|:------:|:------:|
-		|1 (DAT2)|no connection|GND|
-		|10 (MOUNT)|no connection|GND|
-		|11 (MOUNT)|no connection|GND|
-		</div>
-
+		|  J9 PINS   |    V4.2.1     | V4.3.1 |
+		| :--------: | :-----------: | :----: |
+		|  1 (DAT2)  | no connection |  GND   |
+		| 10 (MOUNT) | no connection |  GND   |
+		| 11 (MOUNT) | no connection |  GND   |
 #### :zap: PCB:
 ##### Minor Changes
 1. Changing layout
 2. Changing dimension to 105mm x 75 mm
 3. Eliminating 1 hole
 4. Adding 3D visual for all components
-
 
 <a name="V4.2.1"></a>
 
@@ -248,51 +227,32 @@ Versi 4.2.1
 #### :hammer_and_wrench: Schematic:
 ##### Minor Changes
 1. Adding support components of U5:
-
-	<div align="center">
-
-	|Symbol| Value |
-	|:------:|:------:|
-	|R14|330|
-	|C8|470|
-	|R15|1k|
-	|CFF2|3.3 nF|
-	</div>
-
+	| Symbol | Value  |
+	| :----: | :----: |
+	|  R14   |  330   |
+	|   C8   |  470   |
+	|  R15   |   1k   |
+	|  CFF2  | 3.3 nF |
 2. Changing Value:
-	<div align="center">
-
-	|V4.1.1|V4.2.1|
-	|:------:|:------:|
-	|I2C|AUX|
-	|AUX|AUX2|
-	</div>
-
+	| V4.1.1 | V4.2.1 |
+	| :----: | :----: |
+	|  I2C   |  AUX   |
+	|  AUX   |  AUX2  |
 3. Changing 4 pin J7 symbol to 5 pin with pin connections:
-	<div align="center">
-
-	|J7 Pins| Connected to |
-	|:------:|:------:|
-	|1|7V5DC|
-	|2|GND1|
-	|3|GND2|
-	|4|SCL|
-	|5|SDA|
-
-	</div>
-
+	| J7 Pins | Connected to |
+	| :-----: | :----------: |
+	|    1    |    7V5DC     |
+	|    2    |     GND1     |
+	|    3    |     GND2     |
+	|    4    |     SCL      |
+	|    5    |     SDA      |
 ##### Patch Changes
 1. Changing U5 symbol as fixed stepdown to adjustable stepdown
-
 2. Changing references:
-	<div align="center">
-
-	|V4.1.1|V4.2.1|
-	|:------:|:------:|
-	|D2|D3|
-	|D3|D2|
-	</div>
-
+	| V4.1.1 | V4.2.1 |
+	| :----: | :----: |
+	|   D2   |   D3   |
+	|   D3   |   D2   |
 #### :zap: PCB:
 ##### Patch Changes
 1. AUX's ground plane separated from main ground plane
@@ -310,109 +270,78 @@ Versi 4.1.1
 #### :hammer_and_wrench: Schematic:
 ##### Major Changes
 1. Adding U6 with value OUT-7,5V as power source of 2.5 V sensor and its support components:
-
-	<div align="center">
-
-	| Symbol | Value |
-	|:------:|:------:|
-	|D2|1N5835|
-	|L2|33 uH|
-	|C9|680 uF|
-	|C10|330 uF|
-	|R11|1k|
-	|R12|1k|
-	|R13|390|
-	|CFF1|1.5 nF|
-
-	</div>
-
+	| Symbol | Value  |
+	| :----: | :----: |
+	|   D2   | 1N5835 |
+	|   L2   | 33 uH  |
+	|   C9   | 680 uF |
+	|  C10   | 330 uF |
+	|  R11   |   1k   |
+	|  R12   |   1k   |
+	|  R13   |  390   |
+	|  CFF1  | 1.5 nF |
 ##### Minor Changes
 1. Changing L1 value to 47 uH 
 
 ##### Patch Changes
-
 1. Changing References:
-
-	<div align="center">
-
-	| V3.1.1 | V4.1.1 |
-	|:------:|:------:|
-	|1N5401|D1|
-	|1N5825|D3|
-	|LM2596T-5|U5|
-	|ATMega328|U1|
-	|AMS1117|U2|
-	|C1|C7|
-	|C2|C5|
-	|C3|C2|
-	|C5|C6|
-	|C6|C1|
-	|BufferSD1|U4|
-	|VDCIn1|J12|
-	|Battery1|J10|
-	|SwitchSlot1|J11|
-	|R7|R4|
-	|R5|R8|
-	|R6|R9|
-	|R1|R5|
-	|R2|R6|
-	|R3|R10|
-	|I2C1|J7|
-	|Nextion1|J8|
-	|AUX1|J9|
-	|T6|J6|
-	|T5|J5|
-	|T4|J4|
-	|T3|J3|
-	|T2|J2|
-	|T1|J1|
-
-	</div>
-
+	|   V3.1.1    | V4.1.1 |
+	| :---------: | :----: |
+	|   1N5401    |   D1   |
+	|   1N5825    |   D3   |
+	|  LM2596T-5  |   U5   |
+	|  ATMega328  |   U1   |
+	|   AMS1117   |   U2   |
+	|     C1      |   C7   |
+	|     C2      |   C5   |
+	|     C3      |   C2   |
+	|     C5      |   C6   |
+	|     C6      |   C1   |
+	|  BufferSD1  |   U4   |
+	|   VDCIn1    |  J12   |
+	|  Battery1   |  J10   |
+	| SwitchSlot1 |  J11   |
+	|     R7      |   R4   |
+	|     R5      |   R8   |
+	|     R6      |   R9   |
+	|     R1      |   R5   |
+	|     R2      |   R6   |
+	|     R3      |  R10   |
+	|    I2C1     |   J7   |
+	|  Nextion1   |   J8   |
+	|    AUX1     |   J9   |
+	|     T6      |   J6   |
+	|     T5      |   J5   |
+	|     T4      |   J4   |
+	|     T3      |   J3   |
+	|     T2      |   J2   |
 2. Changing value of LM2596T-5 to OUT-5V
-
 3. Changing pin connections:
-
 	- J7
-		<div align="center">
-
-		|J7 PINS| V3.1.1 | V4.1.1 |
-		|:------:|:------:|:------:|
-		|1|5VDC|7V5DC|
-
-		</div>
-
+		| J7 PINS | V3.1.1 | V4.1.1 |
+		| :-----: | :----: | :----: |
+		|    1    |  5VDC  | 7V5DC  |
 	- J9
-		<div align="center">
-
-		|J9 PINS| V3.1.1 | V4.1.1 |
-		|:------:|:------:|:------:|
-		|1|5VDC|7V5DC|
-		|3|AUX2|AUX1|
-		|4|AUX1|AUX2|
-
-		</div>
-
+		| J9 PINS | V3.1.1 | V4.1.1 |
+		| :-----: | :----: | :----: |
+		|    1    |  5VDC  | 7V5DC  |
+		|    3    |  AUX2  |  AUX1  |
+		|    4    |  AUX1  |  AUX2  |
 	- PCA9548A
-		<div align="center">
-
-		|PCA9548A PINS| V3.1.1 | V4.1.1 |
-		|:------:|:------:|:------:|
-		|9 (SD0)|SDA4|unconnected|
-		|10 (SC0)|SCL4|unconnected|
-		|11 (SD1)|SDA3|unconnected|
-		|12 (SC1)|SCL3|unconnected|
-		|13 (SD2)|SDA0|SDA2|
-		|14 (SC2)|SCL0|SCL2|
-		|17 (SD4)|SDA2|SDA0|
-		|18 (SC4)|SCL2|SCL0|
-		|21 (SD6)|unconnected|SDA3|
-		|22 (SC6)|unconnected|SCL3|
-		|23 (SD7)|unconnected|SDA4|
-		|24 (SC7)|unconnected|SCL4|
-
-		</div>
-
+		| PCA9548A PINS |   V3.1.1    |   V4.1.1    |
+		| :-----------: | :---------: | :---------: |
+		|    9 (SD0)    |    SDA4     | unconnected |
+		|   10 (SC0)    |    SCL4     | unconnected |
+		|   11 (SD1)    |    SDA3     | unconnected |
+		|   12 (SC1)    |    SCL3     | unconnected |
+		|   13 (SD2)    |    SDA0     |    SDA2     |
+		|   14 (SC2)    |    SCL0     |    SCL2     |
+		|   17 (SD4)    |    SDA2     |    SDA0     |
+		|   18 (SC4)    |    SCL2     |    SCL0     |
+		|   21 (SD6)    | unconnected |    SDA3     |
+		|   22 (SC6)    | unconnected |    SCL3     |
+		|   23 (SD7)    | unconnected |    SDA4     |
+		|   24 (SC7)    | unconnected |    SCL4     |
 #### :zap: PCB:
 ##### Major Changes
 1. Changing dimension to 92.00 mm x 75.00 mm with edge cuts
@@ -434,70 +363,46 @@ Versi 3.1.1
 #### :hammer_and_wrench: Schematic:
 ##### Major Changes
 1. Breakdown U5 step down DC-DC module to IC and its support components:
-
-	<div align="center">
-
-	| Symbol | Value |
-	|:------:|:------:|
-	|LM2596T-5|LM2596T-5|
-	|1N5824|1N5824|
-	|C7|680 uF|
-	|C8|220 uF|
-	|L1|47 uH|
-
-	</div>
-
+	|  Symbol   |   Value   |
+	| :-------: | :-------: |
+	| LM2596T-5 | LM2596T-5 |
+	|  1N5824   |  1N5824   |
+	|    C7     |  680 uF   |
+	|    C8     |  220 uF   |
+	|    L1     |   47 uH   |
 2. Changing symbol and footprint of 2 pin VDCIn1 symbol to 3 pin Jack DC symbol 
 ##### Patch Changes
 1. Changing references
-	
-	<div align="center">
-
-	| V2.1.1 | V3.1.1 |
-	|:------:|:------:|
-	|Nextion|Nextion1|
-	|I2C|I2C1|
-	|AUX|AUX1|
-	|BufferSD|BufferSD1|
-	|PCA9548A|PCA9548A1|
-	|J1|VDCIn1|
-	|J2|Battery1|
-	|J3|SwitchSlot1|
-	|U3|AMS1117|
-	
-	</div>
-
+	|  V2.1.1  |   V3.1.1    |
+	| :------: | :---------: |
+	| Nextion  |  Nextion1   |
+	|   I2C    |    I2C1     |
+	|   AUX    |    AUX1     |
+	| BufferSD |  BufferSD1  |
+	| PCA9548A |  PCA9548A1  |
+	|    J1    |   VDCIn1    |
+	|    J2    |  Battery1   |
+	|    J3    | SwitchSlot1 |
+	|    U3    |   AMS1117   |
 2. Changing pin connections
 	- PCA9548A1
-
-		<div align="center">
-
-		|I2C PINS| V2.1.1 | V3.1.1 |
-		|:------:|:------:|:------:|
-		|9 (SD0)|unconnected|SDA4|
-		|10 (SC0)|unconnected|SCL4|
-		|11 (SD1)|unconnected|SDA3|
-		|12 (SC1)|unconnected|SCL3|
-		|21 (SD6)|SDA3|unconnected|
-		|22 (SC6)|SCL3|unconnected|
-		|23 (SD7)|SDA4|unconnected|
-		|24 (SC7)|SCL4|unconnected|
-
-		</div>
-
+		| I2C PINS |   V2.1.1    |   V3.1.1    |
+		| :------: | :---------: | :---------: |
+		| 9 (SD0)  | unconnected |    SDA4     |
+		| 10 (SC0) | unconnected |    SCL4     |
+		| 11 (SD1) | unconnected |    SDA3     |
+		| 12 (SC1) | unconnected |    SCL3     |
+		| 21 (SD6) |    SDA3     | unconnected |
+		| 22 (SC6) |    SCL3     | unconnected |
+		| 23 (SD7) |    SDA4     | unconnected |
+		| 24 (SC7) |    SCL4     | unconnected |
 	- Nextion1
-
-		<div align="center">
-
-		|Nextion1 PINS| V2.1.1 | V3.1.1 |
-		|:------:|:------:|:------:|
-		|2|5VDC|GND|
-		|1|GND|5VDC|
-
-		</div>
-		
-4. Delete all units of values
-3. Change footprint of Battery1 from vertical JST to horizontal JST 
+		| Nextion1 PINS | V2.1.1 | V3.1.1 |
+		| :-----------: | :----: | :----: |
+		|       2       |  5VDC  |  GND   |
+		|       1       |  GND   |  5VDC  |
+3. Delete all units of values
+4. Change footprint of Battery1 from vertical JST to horizontal JST 
 
 #### :zap: PCB:
 ##### Major Changes
@@ -519,91 +424,60 @@ Versi 2.1.1
 #### :hammer_and_wrench: Schematic:
 ##### Patch Changes
 1. Changing References
-
-	<div align="center">
-
-	| V2.0.0 | V2.1.1 |
-	|:------:|:------:|
-	|U1|ATMEGA328P|
-	|U2|BufferSD|
-	|U4|StepDown|
-	|U5|PCA9548A|
-	|J4|T6|
-	|J5|T5|
-	|J6|T4|
-	|J7|T3|
-	|J8|T2|
-	|J9|T1|
-	|J10|I2C|
-	|J12|Nextion|
-	|J13|AUX|
-
-	</div>
-
+	| V2.0.0 |   V2.1.1   |
+	| :----: | :--------: |
+	|   U1   | ATMEGA328P |
+	|   U2   |  BufferSD  |
+	|   U4   |  StepDown  |
+	|   U5   |  PCA9548A  |
+	|   J4   |     T6     |
+	|   J5   |     T5     |
+	|   J6   |     T4     |
+	|   J7   |     T3     |
+	|   J8   |     T2     |
+	|   J9   |     T1     |
+	|  J10   |    I2C     |
+	|  J12   |  Nextion   |
+	|  J13   |    AUX     |
 2. Changing Values
-
-	<div align="center">
-
-	| V2.0.0 | V2.1.1 |
-	|:------:|:------:|
-	|74VHC125M|IC-SD|
-	|Next|Nextion|
-
-	</div>
-
+	|  V2.0.0   | V2.1.1  |
+	| :-------: | :-----: |
+	| 74VHC125M |  IC-SD  |
+	|   Next    | Nextion |
 3. Changing Pin Connection
 	- AUX 
-		<div align="center">
-
-		|AUX PINS| V2.0.0 | V2.1.1 |
-		|:-----:|:------:|:------:|
-		|3|AUX1|AUX2|
-		|4|AUX2|AUX1|
-
-		</div>
-
+		| AUX PINS | V2.0.0 | V2.1.1 |
+		| :------: | :----: | :----: |
+		|    3     |  AUX1  |  AUX2  |
+		|    4     |  AUX2  |  AUX1  |
 	- I2C
-		<div align="center">
-
-		|I2C PINS| V2.0.0 | V2.1.1 |
-		|:-----:|:------:|:------:|
-		|3|SDA|SCL|
-		|4|SCL|SDA|
-
-		</div>
-
+		| I2C PINS | V2.0.0 | V2.1.1 |
+		| :------: | :----: | :----: |
+		|    3     |  SDA   |  SCL   |
+		|    4     |  SCL   |  SDA   |
 	- Nextion
-		<div align="center">
-
-		|I2C PINS| V2.0.0 | V2.1.1 |
-		|:-----:|:------:|:------:|
-		|1|5VDC|SCL|
-		|2|RX|5VDC|
-		|4|GND|RX|
-
-		</div>
-
+		| I2C PINS | V2.0.0 | V2.1.1 |
+		| :------: | :----: | :----: |
+		|    1     |  5VDC  |  SCL   |
+		|    2     |   RX   |  5VDC  |
+		|    4     |  GND   |   RX   |
 	- PCA9548A
-		<div align="center">
-
-		|I2C PINS| V2.0.0 | V2.1.1 |
-		|:-----:|:------:|:------:|
-		|9 (SD0)|SDA0|unconnected|
-		|10 (SC0)|SCL0|unconnected|
-		|11 (SD1)|SDA1|unconnected|
-		|12 (SC1)|SCL1|unconnected|
-		|13 (SD2)|SDA2|SDA0|
-		|14 (SC2)|SCL2|SCL0|
-		|15 (SD3)|SDA3|SDA1|
-		|16 (SC3)|SCL3|SCL1|
-		|17 (SD4)|SDA4|SDA2|
-		|18 (SC4)|SCL4|SCL2|
-		|19 (SD6)|unconnected|SDA3|
-		|20 (SC6)|unconnected|SCL3|
-		|21 (SD7)|unconnected|SDA4|
-		|22 (SC7)|unconnected|SCL4|
-		</div>
-
+		| I2C PINS |   V2.0.0    |   V2.1.1    |
+		| :------: | :---------: | :---------: |
+		| 9 (SD0)  |    SDA0     | unconnected |
+		| 10 (SC0) |    SCL0     | unconnected |
+		| 11 (SD1) |    SDA1     | unconnected |
+		| 12 (SC1) |    SCL1     | unconnected |
+		| 13 (SD2) |    SDA2     |    SDA0     |
+		| 14 (SC2) |    SCL2     |    SCL0     |
+		| 15 (SD3) |    SDA3     |    SDA1     |
+		| 16 (SC3) |    SCL3     |    SCL1     |
+		| 17 (SD4) |    SDA4     |    SDA2     |
+		| 18 (SC4) |    SCL4     |    SCL2     |
+		| 19 (SD6) | unconnected |    SDA3     |
+		| 20 (SC6) | unconnected |    SCL3     |
+		| 21 (SD7) | unconnected |    SDA4     |
+		| 22 (SC7) | unconnected |    SCL4     |
 #### :zap: PCB:
 ##### Minor Changes
 1. Adding 1 hole for mounting
