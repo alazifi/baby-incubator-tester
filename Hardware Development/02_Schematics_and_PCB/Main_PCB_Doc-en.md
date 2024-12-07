@@ -1,27 +1,4 @@
 # MAIN PCB DOCUMENTATION
-
-## Guide for Versioning
-Semantic versioning uses this format:
-```bash
-X.Y.Z
-```
-that corresponds to
-```bash
-MAJOR.MINOR.PATCH
-```
-Details:
-1. **MAJOR** indicates major changes that are incompatible with previous versions.
-	- Example: Redesigning new architecture and changing the core functionality
-	- Increment: `1.0.0` &rarr; `2.0.0`
-
-2. **MINOR** indicates changes that are backward-compatible with the addition of new features
-	- Example: Adding new sensor
-	- Increment: `1.1.0` &rarr; `1.2.0`
-
-3. **PATCH** indicates minor changes that do not add new features but solve issues or optimize existing functionalities
-	- Example: Bug fixing, replacing faulty component
-	- Increment: `1.1.1` &rarr; `1.1.2`
-
 ## Version log
 - [V5.1.1](#v5.1.1)
 - [V4.4.1](#v4.4.1)
@@ -34,6 +11,7 @@ Details:
 - [V1.0.0](#v1.0.0) 
 
 - - - -
+
 <a name="V5.1.1"></a>
 
 # V5.1.1

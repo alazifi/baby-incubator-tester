@@ -1,27 +1,4 @@
 # MAIN PCB DOCUMENTATION
-
-## Guide for Versioning
-Semantic versioning uses this format:
-```bash
-X.Y.Z
-```
-that corresponds to
-```bash
-MAJOR.MINOR.PATCH
-```
-Details:
-1. **MAJOR** indicates major changes that are incompatible with previous versions.
-	- Example: Redesigning new architecture and changing the core functionality
-	- Increment: `1.0.0` &rarr; `2.0.0`
-
-2. **MINOR** indicates changes that are backward-compatible with the addition of new features
-	- Example: Adding new sensor
-	- Increment: `1.1.0` &rarr; `1.2.0`
-
-3. **PATCH** indicates minor changes that do not add new features but solve issues or optimize existing functionalities
-	- Example: Bug fixing, replacing faulty component
-	- Increment: `1.1.1` &rarr; `1.1.2`
-
 ## Version log
 - [V5.1.1](#v5.1.1)
 - [V4.4.1](#v4.4.1)
@@ -31,7 +8,9 @@ Details:
 - [V3.1.1](#v3.1.1)
 - [V2.1.1](#v2.1.1)
 - [V2.0.0](#v2.0.0)
-- [V1.0.0](#v1.0.0)
+- [V1.0.0](#v1.0.0) 
+
+- - - -
 
 <a name="V5.1.1"></a>
 
@@ -76,7 +55,7 @@ A more reliable device is introduced in this version:
 		| :-------: | :----: | :----: |
 		|  7 (VCC)  |  5VDC  | 5VDCB  |
 		| 20 (AVCC) |  5VDC  | 5VDCB  |
-	- 5VDC connection at Pin 3 U2 (VI) to 5VDCL
+	- 5VDC connection at pin 3 U2 (VI) to 5VDCL
 	- 5VDC connection at pin 4 U5 (OUT+) to 5VDCB
 4. Changing hole position 			
 5. Changing value of IC-SD to 74HCT125
@@ -87,10 +66,10 @@ A more reliable device is introduced in this version:
 2. Adding unit for all values
 3. Changing pin connections of symbols:
 	- J7
-    	| J7 PINS | V4.3.1 | V5.1.1 |
-    	| :-----: | :----: | :----: |
-    	|    1    |  GND   | 5VDCL  |
-    	|    4    |  5VDC  |  GND   |
+		| J7 PINS | V4.3.1 | V5.1.1 |
+		| :-----: | :----: | :----: |
+		|    1    |  GND   | 5VDCL  |
+		|    4    |  5VDC  |  GND   |
 	- PCA9548A
 		| PCA9548 PINS | V4.3.1 | V5.1.1 |
 		| :----------: | :----: | :----: |
@@ -111,6 +90,8 @@ A more reliable device is introduced in this version:
 	| :------------: | :------------: |
 	| StepDownLM2596 | Step_Down_DCDC |
 	|      TP3       |      12V       |
+
+- - - -
 
 <a name="V4.4.1"></a>
 
@@ -167,6 +148,8 @@ Introducing 4 test points to the PCB in this version to shorten the production a
 ##### Patch Changes
 1. Changing text layout
 
+- - - -
+
 <a name="V4.3.1"></a>
 
 # V4.3.1 (Second printed version)
@@ -219,6 +202,8 @@ Versi 4.3.1
 3. Eliminating 1 hole
 4. Adding 3D visual for all components
 
+- - - -
+
 <a name="V4.2.1"></a>
 
 # V4.2.1
@@ -260,6 +245,8 @@ The improvement of the fourth version that anticipate the Electromagnetic Interf
 ##### Patch Changes
 1. AUX's ground plane separated from main ground plane
 2. Dimension of 92.00 mm x 75.00 mm with edge cuts layer
+
+- - - -
 
 <a name="V4.1.1"></a>
 
@@ -353,6 +340,8 @@ More power source for sensor is added and dedicated to power the sensor in this 
 2. Adding 1 mounting hole 
 3. Chaging hole position with reference to the top-left corner, with the socket positioned in the bottom-right corner
 
+- - - -
+
 <a name="V3.1.1"></a>
 
 # V3.1.1
@@ -413,6 +402,8 @@ Also this device integrates power components in one board that simplifies mass p
 
 ##### Minor Changes
 1. Changing hole position
+
+- - - -
 
 <a name="V2.1.1"></a>
 
@@ -489,6 +480,8 @@ Improvement of second version that enables stronger mounting in a device as the 
 1. Changing references, values, nets, and footprints corresponds to schematics
 2. Adding ground plane
 
+- - - -
+
 <a name="V2.0.0"></a>
 
 # V2.0.0
@@ -511,6 +504,8 @@ Second version of Baby Incubator Tester that has these features:
 1. Changing dimension to 93.88 mm x 75,00 mm
 2. Changing layout
 3. Eliminating dedicated port for uploading program
+
+- - - -
 
 <a name="V1.0.0"></a>
 
