@@ -3,9 +3,31 @@ Proyek ini merupakan kerjasama antara PT. Hana Master Jaya dan PT. Fania Ersa Pr
 
 Untuk dokumentasi skematik dan PCB [klik disini](Hardware%20Development/02_Schematics_and_PCB/Dokumentasi.md)!
 
+## Guide for Versioning
+Semantic versioning uses this format:
+```bash
+X.Y.Z
+```
+that corresponds to
+```bash
+MAJOR.MINOR.PATCH
+```
+Details:
+1. **MAJOR** indicates major changes that are incompatible with previous versions.
+	- Example: Redesigning new architecture and changing the core functionality
+	- Increment: `1.0.0` &rarr; `2.0.0`
+
+2. **MINOR** indicates changes that are backward-compatible with the addition of new features
+	- Example: Adding new sensor
+	- Increment: `1.1.0` &rarr; `1.2.0`
+
+3. **PATCH** indicates minor changes that do not add new features but solve issues or optimize existing functionalities
+	- Example: Bug fixing, replacing faulty component
+	- Increment: `1.1.1` &rarr; `1.1.2`
 
 <a name="directory_structure"></a>
-# Directory Structure
+
+## Directory Structure
 
 ```bash
 project/

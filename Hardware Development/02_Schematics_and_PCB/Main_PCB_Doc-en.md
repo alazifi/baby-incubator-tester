@@ -34,7 +34,6 @@ Details:
 - [V1.0.0](#v1.0.0)
 
 <a name="V5.1.1"></a>
-
 # V5.1.1
 #### Creator: Mr. Haidar
 ### :package: Description
@@ -113,7 +112,6 @@ A more reliable device is introduced in this version:
 	|      TP3       |      12V       |
 
 <a name="V4.4.1"></a>
-
 # V4.4.1
 #### Creator: Mr. Haidar
 ### :package: Description
@@ -168,7 +166,6 @@ Introducing 4 test points to the PCB in this version to shorten the production a
 1. Changing text layout
 
 <a name="V4.3.1"></a>
-
 # V4.3.1 (Second printed version)
 #### Creator: Mr. Haidar
 ### :package: Description
@@ -220,7 +217,6 @@ Versi 4.3.1
 4. Adding 3D visual for all components
 
 <a name="V4.2.1"></a>
-
 # V4.2.1
 #### Creator: Mr. Haidar
 ### :package: Description
@@ -262,7 +258,6 @@ The improvement of the fourth version that anticipate the Electromagnetic Interf
 2. Dimension of 92.00 mm x 75.00 mm with edge cuts layer
 
 <a name="V4.1.1"></a>
-
 # V4.1.1
 #### Creator: Mr. Haidar
 ### :package: Description
@@ -354,7 +349,6 @@ More power source for sensor is added and dedicated to power the sensor in this 
 3. Chaging hole position with reference to the top-left corner, with the socket positioned in the bottom-right corner
 
 <a name="V3.1.1"></a>
-
 # V3.1.1
 #### Creator: Mr. Haidar
 ### :package: Description
@@ -415,7 +409,6 @@ Also this device integrates power components in one board that simplifies mass p
 1. Changing hole position
 
 <a name="V2.1.1"></a>
-
 # V2.1.1
 #### Creator: Mr. Haidar
 ### :package: Description
@@ -490,7 +483,6 @@ Improvement of second version that enables stronger mounting in a device as the 
 2. Adding ground plane
 
 <a name="V2.0.0"></a>
-
 # V2.0.0
 #### Creator: Mr. Haidar
 ### :package: Description
@@ -513,7 +505,6 @@ Second version of Baby Incubator Tester that has these features:
 3. Eliminating dedicated port for uploading program
 
 <a name="V1.0.0"></a>
-
 # V1.0.0 (First printed version)
 #### Creator: Mr. Rustanto
 ### :package: Description
