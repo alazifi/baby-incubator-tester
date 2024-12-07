@@ -38,16 +38,19 @@ Details:
 # V5.1.1
 #### Creator: Mr. Haidar
 ### :package: Description
-
-Versi 5.1.1
+A more reliable device is introduced in this version:
+1. Centralized the power of all components into a single power source 5VDC, so 7.5 VDC sensor is no longer introduced in this version.
+2. Added a connection indicator of AUX sensor that useful to user work.
+3. More user-friendly power switch that tell you the device is turned on/off
+4. Introduced battery saver that will turn the device off before the lowest power of battery to keep the battery performance and efficiency. Make your device powered by the long-lasting battery.
 
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
 ##### Major Changes
-1. Changing U6 module step down menjadi U6 to ADS1115 module as amplifier
-2. Changing 2 pin J10 to 3 pin J10 as indicator lamp
-3. Adding connection indicator of J8 with pull up resistor R11 with value 10k at pin 14 U1 (PB0)
-4. Adding power limiter feature with force shut down when battery at the lowest threshold with components: 
+1. Changing module step down U6 to ADS1115 module to centralized the power and support the read of aux sensor
+2. Changing 2 pin J10 to 3 pin J10 to support the function of indicator lamp on the switch 
+3. Adding pull up resistor R11 with value 10k at pin 14 U1 (PB0) to support feature of connection indicator of AUX Sensor (J8)
+4. Adding power limiter feature with components: 
 	- Q1 symbol with value BD140
 		- Base as trigger from input pin 15 U1 (PB1) 
 		- Emitter as 5VDCB
@@ -59,13 +62,13 @@ Versi 5.1.1
 
 ##### Minor Changes
 1. Changing pin connections of J8:
-		| J8 PINS | V4.3.1 |     V5.1.1     |
-		| :-----: | :----: | :------------: |
-		|    1    | 75VDC  |     GAIN1      |
-		|    2    |  GND   |     GAIN0      |
-		|    3    |  GND   | Sens_Indicator |
-		|    4    |  SCL   |      GND       |
-		|    5    |  SDA   |     5VDCL      |
+	| J8 PINS | V4.3.1 |     V5.1.1     |
+	| :-----: | :----: | :------------: |
+	|    1    | 75VDC  |     GAIN1      |
+	|    2    |  GND   |     GAIN0      |
+	|    3    |  GND   | Sens_Indicator |
+	|    4    |  SCL   |      GND       |
+	|    5    |  SDA   |     5VDCL      |
 2. Changing text layout
 3. Changing connections
 	- U1
@@ -73,7 +76,7 @@ Versi 5.1.1
 		| :-------: | :----: | :----: |
 		|  7 (VCC)  |  5VDC  | 5VDCB  |
 		| 20 (AVCC) |  5VDC  | 5VDCB  |
-	- 5VDC connenction at Pin 3 U2 (VI) to 5VDCL
+	- 5VDC connection at Pin 3 U2 (VI) to 5VDCL
 	- 5VDC connection at pin 4 U5 (OUT+) to 5VDCB
 4. Changing hole position 			
 5. Changing value of IC-SD to 74HCT125
@@ -82,7 +85,7 @@ Versi 5.1.1
 
 1. Eliminating TP4 symbol
 2. Adding unit for all values
-3. Changing pin connections
+3. Changing pin connections of symbols:
 	- J7
     	| J7 PINS | V4.3.1 | V5.1.1 |
     	| :-----: | :----: | :----: |
@@ -114,17 +117,18 @@ Versi 5.1.1
 # V4.4.1
 #### Creator: Mr. Haidar
 ### :package: Description
-
-Versi 4.4.1
+Introducing 4 test points to the PCB in this version to shorten the production and inspection time. Make the cost of production more reduced at this version!
 
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
 ##### Minor Changes
 1. Adding 4 test point symbols:
-	- TP1 dengan value GND
-	- TP2 dengan value 5 V
-	- TP3 dengan value 7,5 V
-	- TP4 dengan value 12 V
+	| Symbols | Values |
+	| :-----: | :----: |
+	|   TP1   |  GND   |
+	|   TP2   |  5 V   |
+	|	TP3   | 7,5 V  |
+	|   TP4   |  12 V  |
 
 ##### Patch Changes:
 1. Changing references
@@ -141,7 +145,7 @@ Versi 4.4.1
 	|   J8   |   J7   |
 	|   J9   |   J8   |
 2. Eliminating J7 with value I2C
-3. Changing pin connections
+3. Changing pin connections of symbols
 	- J7
 		| J7 PINS | V4.3.1 | V4.4.1 |
 		| :-----: | :----: | :----: |
@@ -175,7 +179,7 @@ Versi 4.3.1
 ##### Minor Changes
 
 1. Changing symbol:
-	- IC U5 Symbol to step down module U5 with value StepDownLM2596
+	- IC U5 symbol to step down module U5 with value StepDownLM2596
 	- IC U6 symbol to step down module U6 with value StepDownLM2596
 2. Eliminating support components of U5 and U6 IC's
 3. Adjusting footprint of U5 and U6 symbols
@@ -189,7 +193,7 @@ Versi 4.3.1
 	| :----: | :----: |
 	|  AUX   |  I2C   |
 	|  AUX2  |  AUX   |
-3. Changing pin connections:
+3. Changing pin connections of symbols:
 	- J7
 		| J7 PINS | V4.2.1 | V4.3.1 |
 		| :-----: | :----: | :----: |
@@ -211,7 +215,7 @@ Versi 4.3.1
 #### :zap: PCB:
 ##### Minor Changes
 1. Changing layout
-2. Changing dimension to 105mm x 75 mm
+2. Changing dimension to 105 mm x 75 mm
 3. Eliminating 1 hole
 4. Adding 3D visual for all components
 
@@ -220,8 +224,7 @@ Versi 4.3.1
 # V4.2.1
 #### Creator: Mr. Haidar
 ### :package: Description
-
-Versi 4.2.1
+The improvement of the fourth version that anticipate the Electromagnetic Interference by separating ground plane of AUX and all main components.
 
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
@@ -256,20 +259,19 @@ Versi 4.2.1
 #### :zap: PCB:
 ##### Patch Changes
 1. AUX's ground plane separated from main ground plane
-2. Dimension of 92 mm x 75 mm with edge cuts layer
+2. Dimension of 92.00 mm x 75.00 mm with edge cuts layer
 
 <a name="V4.1.1"></a>
 
 # V4.1.1
 #### Creator: Mr. Haidar
 ### :package: Description
-
-Versi 4.1.1
+More power source for sensor is added and dedicated to power the sensor in this fourth version of Baby Incubator Tester. This improvement enables the enhancement of sensor performance and boosts its work! 
 
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
 ##### Major Changes
-1. Adding U6 with value OUT-7,5V as power source of 2.5 V sensor and its support components:
+1. Adding U6 with value OUT-7,5V as power source of 7.5 V sensor and its support components:
 	| Symbol | Value  |
 	| :----: | :----: |
 	|   D2   | 1N5835 |
@@ -316,7 +318,7 @@ Versi 4.1.1
 	|     T3      |   J3   |
 	|     T2      |   J2   |
 2. Changing value of LM2596T-5 to OUT-5V
-3. Changing pin connections:
+3. Changing pin connections symbols:
 	- J7
 		| J7 PINS | V3.1.1 | V4.1.1 |
 		| :-----: | :----: | :----: |
@@ -356,8 +358,8 @@ Versi 4.1.1
 # V3.1.1
 #### Creator: Mr. Haidar
 ### :package: Description
-
-Versi 3.1.1
+The third version of Baby Incubator Tester provides stronger charging port that enables a simpler plug and play for recharging device.
+Also this device integrates power components in one board that simplifies mass production proccess.
 
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
@@ -384,18 +386,18 @@ Versi 3.1.1
 	|    J2    |  Battery1   |
 	|    J3    | SwitchSlot1 |
 	|    U3    |   AMS1117   |
-2. Changing pin connections
+2. Changing pin connections of symbols:
 	- PCA9548A1
-		| I2C PINS |   V2.1.1    |   V3.1.1    |
-		| :------: | :---------: | :---------: |
-		| 9 (SD0)  | unconnected |    SDA4     |
-		| 10 (SC0) | unconnected |    SCL4     |
-		| 11 (SD1) | unconnected |    SDA3     |
-		| 12 (SC1) | unconnected |    SCL3     |
-		| 21 (SD6) |    SDA3     | unconnected |
-		| 22 (SC6) |    SCL3     | unconnected |
-		| 23 (SD7) |    SDA4     | unconnected |
-		| 24 (SC7) |    SCL4     | unconnected |
+		| PCA9548A1 PINS |   V2.1.1    |   V3.1.1    |
+		| :------------: | :---------: | :---------: |
+		|    9 (SD0)     | unconnected |    SDA4     |
+		|    10 (SC0)    | unconnected |    SCL4     |
+		|    11 (SD1)    | unconnected |    SDA3     |
+		|    12 (SC1)    | unconnected |    SCL3     |
+		|    21 (SD6)    |    SDA3     | unconnected |
+		|    22 (SC6)    |    SCL3     | unconnected |
+		|    23 (SD7)    |    SDA4     | unconnected |
+		|    24 (SC7)    |    SCL4     | unconnected |
 	- Nextion1
 		| Nextion1 PINS | V2.1.1 | V3.1.1 |
 		| :-----------: | :----: | :----: |
@@ -417,8 +419,7 @@ Versi 3.1.1
 # V2.1.1
 #### Creator: Mr. Haidar
 ### :package: Description
-
-Versi 2.1.1
+Improvement of second version that enables stronger mounting in a device as the impact of adding 1 extra mounting hole
 
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
@@ -444,7 +445,7 @@ Versi 2.1.1
 	| :-------: | :-----: |
 	| 74VHC125M |  IC-SD  |
 	|   Next    | Nextion |
-3. Changing Pin Connection
+3. Changing pin connections of symbols:
 	- AUX 
 		| AUX PINS | V2.0.0 | V2.1.1 |
 		| :------: | :----: | :----: |
@@ -493,8 +494,10 @@ Versi 2.1.1
 # V2.0.0
 #### Creator: Mr. Haidar
 ### :package: Description
-
-Versi 2 
+Second version of Baby Incubator Tester that has these features:
+1. More secured firmware because the development port is no longer available since this version launched
+2. More stable data tracking as the impact of SD card buffer
+3. Easier to inspect schematic documents
 
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
