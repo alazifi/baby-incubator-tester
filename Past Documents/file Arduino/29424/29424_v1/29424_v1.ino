@@ -28,7 +28,7 @@ int soundPin = A2;
 int airspeedPin = A1;
 int ChgPin = 7;
 int ChgState = 0;
-int BattValue = 409; //dapat darimana
+int BattValue = 409;
 int airspeedValue = 0;
 int dataCount = 1; // Variabel untuk menyimpan nomor data, dimulai dari 1
 
