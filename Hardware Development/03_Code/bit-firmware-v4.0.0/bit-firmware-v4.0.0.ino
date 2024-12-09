@@ -2,7 +2,6 @@
 #include <Wire.h>
 #include <SPI.h>
 #include <SD.h>
-// #include "MultiMap.h"
 #include "ADS1X15.h"
 
 ADS1115 ADS(0x48);
@@ -12,6 +11,7 @@ String endChar = "\xFF\xFF\xFF";
 int batPin = A0;
 int airSpeedPin = A1;
 int soundPin = A2;
+int sensIndicator = 
 
 int chgPin = 7;
 int count = -4;
@@ -60,26 +60,13 @@ void setup() {
     // Serial.println("Gagal Baca SD Card!");
     return;
   }
-     ADS.setGain(1);
- ADS.setMode(1);
-   ADS.setDataRate(4); 
-     ADS.begin();
+  ADS.setGain(1);
+  ADS.setMode(1);
+  ADS.setDataRate(4);
+  ADS.begin();
 }
 
 void loop() {
-  // if (millis() - prevTimeNextion >= delayUpNextion) {
-  //   printNextion();
-  //   // upBatLev(analogRead(batPin));
-  //   // Serial.println(dataCore());
-  //   prevTimeNextion = millis();
-  // }
-  // if (millis() - prevTimeSD >= delayUpSD) {
-  //   writeDataToSD(dataCore());
-  //   // Serial.println(dataCore());
-  //   prevTimeSD = millis();
-  // }
-
-
   logTime = millis();
   nowTimeNextion = millis();
   nowTimeSD = millis();
@@ -99,12 +86,12 @@ void loop() {
 }
 
 float sTemp1() {
-  TCA9548A(2); //4
+  TCA9548A(2);  //4
   return (htu1.readTemperature() > 45) ? 45.0 : htu1.readTemperature();
 }
 
 float sTemp2() {
-  TCA9548A(3); //3
+  TCA9548A(3);  //3
   return (htu2.readTemperature() > 45) ? 45.0 : htu2.readTemperature();
 }
 
@@ -163,7 +150,7 @@ float mTemp6() {
   return max(sTemp6(), maxTemp6);
 }
 
-byte batLevel() { //590 to 700
+byte batLevel() {                                          //590 to 700
   int batMap = map(analogRead(batPin), 446, 760, 0, 100);  //nilai 720, 760 | 450 to 720
   batVal = min(batMap, batVal);
   if (batVal < 0) {
@@ -176,25 +163,7 @@ byte batLevel() { //590 to 700
 }
 
 int soundLevel() {
-  // int peakToPeak = 0;
-  // unsigned int startMillis = millis();
-  // unsigned int signalMax = 0;
-  // unsigned int signalMin = 1023;
-  // while (millis() - startMillis < sampleWindow) {
-  //   sample = analogRead(soundPin);
-  //   if (sample < 1024) {
-  //     if (sample > signalMax) {
-  //       signalMax = sample;
-  //     } else if (sample < signalMin) {
-  //       signalMin = sample;
-  //     }
-  //   }
-  // }
-
-  // int avg = signalMax - signalMin;
-  // int out[] = { 45, 50, 54, 65, 77, 82, 84, 87, 90, 93 };
-  // int in[] = { 45, 77, 99, 135, 190, 293, 409, 569, 615, 1012 };
-  return ADS.readADC(0);//multiMap<int>(avg, in, out, 10);
+  return ADS.readADC(0);
 }
 
 bool chgState() {
@@ -366,30 +335,30 @@ char* timeStamp() {
 }
 
 char* dataLable() {
-  return "\nNo,T1,T2,T3,T4,T5,T6,Humidity,AirSpeed,SoundLevel";
+  return "\nNo;T1;T2;T3;T4;T5;T6;Humidity;AirSpeed;SoundLevel";
 }
 
 char* dataCore() {
   count += 1;
   static char data[70];
   strcpy(data, intToChar(count));
-  strcat(data, ",");
+  strcat(data, ";");
   strcat(data, decToChar(sTemp1()));
-  strcat(data, ",");
+  strcat(data, ";");
   strcat(data, decToChar(sTemp2()));
-  strcat(data, ",");
+  strcat(data, ";");
   strcat(data, decToChar(sTemp3()));
-  strcat(data, ",");
+  strcat(data, ";");
   strcat(data, decToChar(sTemp4()));
-  strcat(data, ",");
+  strcat(data, ";");
   strcat(data, decToChar(sTemp5()));
-  strcat(data, ",");
+  strcat(data, ";");
   strcat(data, decToChar(sTemp6()));
-  strcat(data, ",");
+  strcat(data, ";");
   strcat(data, decToChar(sHumi5()));
-  strcat(data, ",");
+  strcat(data, ";");
   strcat(data, decToChar(airSpeed()));
-  strcat(data, ",");
+  strcat(data, ";");
   strcat(data, intToChar(soundLevel()));
   if (count == -3) {
     return dataHeader();

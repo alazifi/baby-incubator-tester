@@ -104,7 +104,7 @@ void setup() {
   }
   Serial.println("Sukses baca kartu microSD!"); //berhasil
   Serial.println();
-  //WriteDataToSD();
+  WriteDataToSD();
   
 }
 bool flag=false;

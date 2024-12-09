@@ -2,34 +2,28 @@
 #include <Wire.h>
 #include <SPI.h>
 #include <SD.h>
-#include "ADS1X15.h"
-
-ADS1115 ADS(0x48);
+#include "MultiMap.h"
 
 String endChar = "\xFF\xFF\xFF";
 
 int batPin = A0;
 int airSpeedPin = A1;
 int soundPin = A2;
-int sensIndicator = 
 
 int chgPin = 7;
-int count = -4;
+int count = -3;
 
 int batVal = 409;
 
-const int CS = 10;
+const int CS = 4;
 
-const int sampleWindow = 50;
-unsigned int sample;
+int sampleWindow = 50;
+int sample;
 
 unsigned long prevTimeNextion = 0;
 unsigned long prevTimeSD = 0;
-unsigned long nowTimeNextion = 0;
-unsigned long nowTimeSD = 0;
-unsigned long logTime = 0;
 unsigned long delayUpNextion = 1000;
-unsigned long delayUpSD = 1000;
+unsigned long delayUpSD = 3000;
 
 HTU21D htu1 = HTU21D();
 HTU21D htu2 = HTU21D();
@@ -60,76 +54,54 @@ void setup() {
     // Serial.println("Gagal Baca SD Card!");
     return;
   }
-  ADS.setGain(1);
-  ADS.setMode(1);
-  ADS.setDataRate(4);
-  ADS.begin();
 }
 
 void loop() {
-  // if (millis() - prevTimeNextion >= delayUpNextion) {
-  //   printNextion();
-  //   // upBatLev(analogRead(batPin));
-  //   // Serial.println(dataCore());
-  //   prevTimeNextion = millis();
-  // }
-  // if (millis() - prevTimeSD >= delayUpSD) {
-  //   writeDataToSD(dataCore());
-  //   // Serial.println(dataCore());
-  //   prevTimeSD = millis();
-  // }
-
-
-  logTime = millis();
-  nowTimeNextion = millis();
-  nowTimeSD = millis();
-
-  if (logTime >= 8000) {
-    if (millis() - prevTimeNextion >= delayUpNextion) {
-      printNextion();
-      prevTimeNextion = millis();
-    }
+  if (millis() - prevTimeNextion >= delayUpNextion) {
+    printNextion();
+    // upBatLev(analogRead(batPin));
+    // Serial.println(dataCore());
+    prevTimeNextion = millis();
   }
-  // } else {
   if (millis() - prevTimeSD >= delayUpSD) {
     writeDataToSD(dataCore());
+    // Serial.println(dataCore());
     prevTimeSD = millis();
   }
-  // }
 }
 
 float sTemp1() {
-  TCA9548A(2);  //4
+  TCA9548A(4);
   return (htu1.readTemperature() > 45) ? 45.0 : htu1.readTemperature();
 }
 
 float sTemp2() {
-  TCA9548A(3);  //3
+  TCA9548A(3);
   return (htu2.readTemperature() > 45) ? 45.0 : htu2.readTemperature();
 }
 
 float sTemp3() {
-  TCA9548A(4);  //2
+  TCA9548A(2);
   return (htu3.readTemperature() > 45) ? 45.0 : htu3.readTemperature();
 }
 
 float sTemp4() {
-  TCA9548A(5);  //6
+  TCA9548A(6);
   return (htu4.readTemperature() > 45) ? 45.0 : htu4.readTemperature();
 }
 
 float sTemp5() {
-  TCA9548A(6);  //7
+  TCA9548A(7);
   return (htu5.readTemperature() > 45) ? 45.0 : htu5.readTemperature();
 }
 
 float sHumi5() {
-  TCA9548A(6);  //7
+  TCA9548A(7);
   return (htu5.readHumidity() > 100) ? 100 : htu5.readHumidity();
 }
 
 float sTemp6() {
-  TCA9548A(7);  //5
+  TCA9548A(5);
   return (htu6.readTemperature() > 45) ? 45.0 : htu6.readTemperature();
 }
 
@@ -163,8 +135,8 @@ float mTemp6() {
   return max(sTemp6(), maxTemp6);
 }
 
-byte batLevel() {                                          //590 to 700
-  int batMap = map(analogRead(batPin), 446, 760, 0, 100);  //nilai 720, 760 | 450 to 720
+byte batLevel() {
+  int batMap = map(analogRead(batPin), 590, 700, 0, 100);  //nilai 720, 760 | 450 to 720
   batVal = min(batMap, batVal);
   if (batVal < 0) {
     return 0;
@@ -175,26 +147,26 @@ byte batLevel() {                                          //590 to 700
   }
 }
 
-int soundLevel() {
-  // int peakToPeak = 0;
-  // unsigned int startMillis = millis();
-  // unsigned int signalMax = 0;
-  // unsigned int signalMin = 1023;
-  // while (millis() - startMillis < sampleWindow) {
-  //   sample = analogRead(soundPin);
-  //   if (sample < 1024) {
-  //     if (sample > signalMax) {
-  //       signalMax = sample;
-  //     } else if (sample < signalMin) {
-  //       signalMin = sample;
-  //     }
-  //   }
-  // }
+byte soundLevel() {
+  int peakToPeak = 0;
+  unsigned int startMillis = millis();
+  unsigned int signalMax = 0;
+  unsigned int signalMin = 1023;
+  while (millis() - startMillis < sampleWindow) {
+    sample = analogRead(soundPin);
+    if (sample < 1024) {
+      if (sample > signalMax) {
+        signalMax = sample;
+      } else if (sample < signalMin) {
+        signalMin = sample;
+      }
+    }
+  }
 
-  // int avg = signalMax - signalMin;
-  // int out[] = { 45, 50, 54, 65, 77, 82, 84, 87, 90, 93 };
-  // int in[] = { 45, 77, 99, 135, 190, 293, 409, 569, 615, 1012 };
-  return ADS.readADC(0);  //multiMap<int>(avg, in, out, 10);
+  int avg = signalMax - signalMin;
+  int out[] = { 45, 50, 54, 65, 77, 82, 84, 87, 90, 93 };
+  int in[] = { 45, 77, 99, 135, 190, 293, 409, 569, 615, 1012 };
+  return multiMap<int>(avg, in, out, 10);
 }
 
 bool chgState() {
@@ -202,7 +174,7 @@ bool chgState() {
 }
 
 float airSpeed() {
-  return ADS.readADC(1);
+  return 2.10;
 }
 
 void upTemp1(float temp1) {
@@ -366,37 +338,35 @@ char* timeStamp() {
 }
 
 char* dataLable() {
-  return "\nNo;T1;T2;T3;T4;T5;T6;Humidity;AirSpeed;SoundLevel";
+  return "No,T1,T2,T3,T4,T5,T6,Humidity,AirSpeed,SoundLevel";
 }
 
 char* dataCore() {
   count += 1;
   static char data[70];
   strcpy(data, intToChar(count));
-  strcat(data, ";");
+  strcat(data, ",");
   strcat(data, decToChar(sTemp1()));
-  strcat(data, ";");
+  strcat(data, ",");
   strcat(data, decToChar(sTemp2()));
-  strcat(data, ";");
+  strcat(data, ",");
   strcat(data, decToChar(sTemp3()));
-  strcat(data, ";");
+  strcat(data, ",");
   strcat(data, decToChar(sTemp4()));
-  strcat(data, ";");
+  strcat(data, ",");
   strcat(data, decToChar(sTemp5()));
-  strcat(data, ";");
+  strcat(data, ",");
   strcat(data, decToChar(sTemp6()));
-  strcat(data, ";");
+  strcat(data, ",");
   strcat(data, decToChar(sHumi5()));
-  strcat(data, ";");
+  strcat(data, ",");
   strcat(data, decToChar(airSpeed()));
-  strcat(data, ";");
+  strcat(data, ",");
   strcat(data, intToChar(soundLevel()));
-  if (count == -3) {
+  if (count == -2) {
     return dataHeader();
-  } else if (count == -2) {
-    return nextionTimestamp();
   } else if (count == -1) {
-    return nextionTimestamp();
+    return timeStamp();
   } else if (count == 0) {
     return dataLable();
   } else {
