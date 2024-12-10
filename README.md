@@ -1,5 +1,6 @@
 # BABY INCUBATOR TESTER
-Proyek ini merupakan kerjasama antara PT. Hana Master Jaya dan PT. Fania Ersa Pratama untuk membuat suatu alat yang digunakan di bidang medis yang memiliki fungsi untuk mengkalibrasi inkubator bayi.
+Proyek ini merupakan kerjasama antara PT. Hana Master Jaya dan PT. Fania Ersa Pratama untuk membuat suatu alat yang digunakan di bidang medis dengan fungsi untuk mengkalibrasi inkubator bayi.
+
 
 Untuk dokumentasi skematik dan PCB bisa [klik disini](Hardware_Development/02_Schematics_and_PCB/Main_PCB-en.md)!
 

@@ -93,7 +93,7 @@ A more reliable device is introduced in this version:
 
 - - - -
 
-<a name="V4.3.0"></a>
+<!-- <a name="V4.3.0"></a> -->
 
 # V4.3.0
 #### Creator: Mr. Haidar
