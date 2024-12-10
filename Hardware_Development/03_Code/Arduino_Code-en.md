@@ -11,22 +11,23 @@
 
 <a name="V4.0.0"></a>
 
-# V4.0.0
+# V4.0.0 (UNRELEASED)
 #### Creator: Mr. Haidar
 ## Changed
 ## Added
-- Added `sensIndicator` pin
+- **Breaking:** Added `sensIndicator` pin
+- **Breaking:** Added `limiter` pin
 
 <a name="V3.0.0"></a>
 
-# V3.0.0 (UNRELEASED)
+# V3.0.0
 #### Creator: Mr. Haidar
 ## Changed
 - **Breaking:** Changed the calculation method from `mapping method` to `Analog to Digital convertion method` for functions `soundLevel()` and `airSpeed()` 
 - Changed initial value of `count` form `-3` to `-4`
 - Changed pin number of `CS` from `4` to `10`
-- Changed first time of data update to HMI Nextion to 8000 ms after device boot up
-- Changed interval time to store data from 3000 ms to 1000 ms
+- Changed first time of data update to HMI Nextion to `8000 ms` after device boot up
+- Changed interval time to store data from `3000 ms` to `1000 ms`
 - Changed SPI addresses of `HTU21D`
 - Changed logic in `dataCore()` function following the value of `count`
 
@@ -37,7 +38,7 @@
 - Added special character `\n` to `dataLable()` function
 
 ## Removed
-- Removed library "MultiMap.h"
+- Removed library `"MultiMap.h"`
 
 - - - -
 
@@ -56,7 +57,7 @@
 
 ## Added
 - Added integer variable `batVal` with value `409` as the default value of battery error handler
-- Added unsigned long variables for handling interval time to update displayed data to Nextion for 1000 ms and write data to SD card for 3000 ms
+- Added unsigned long variables for handling interval time to update displayed data to Nextion for `1000 ms` and write data to SD card for `3000 ms`
 - Combined multiple HMI update functions for each sensor into a single function `printNextion()`
 - Added 6 functions to handle proccess of finding maximum temperature of HTU21D `mTempX()` and their HMI update functions `upMaxTempX()`
 - Added logic alternative to battery leveling method
@@ -67,7 +68,7 @@
 - Added char type functions `dataHeader()`, `dataLable()`, `dataCore()` and `timestamp()` to support data writing to SD Card
 
 ## Removed
-- Removed chgFlag() function
+- Removed `chgFlag()` function
 
 - - - -
 
@@ -79,12 +80,12 @@
 - **Breaking:** renamed all variables, constants, and functions
 - **Breaking:** changed some variables to functions
 ## Removed
-- Removed the String.h library
+- Removed the `"String.h"` library
 - **considered to be removed** Removed variables of `BattValue`, `chgFlag`, `ChgState`, `prevMillis2`, `temp10`, `temp20`, `temp30`, `temp40`, `temp50`, 
 `temp60`, `SoundLevel`, `SpeedLevel`, `buffer[]`, `MaxTemp10`,
 `MaxTemp20`, `MaxTemp30`, `MaxTemp40`, `MaxTemp50`, `MaxTemp60`,
 `var[]`,`humid5`,`DataSensor[]`,`flag`, `battcalc` 
-- Removed function `readSensor()`, `appendStr()`
+- Removed function `readSensor()`, and `appendStr()`
 
 - - - -
 
@@ -94,10 +95,10 @@
 #### Creator: Mr. Haidar
 ## Changed
 - Replaced the use of a variable for the `header string constant` with a direct string literal in `Serial.println()` to optimize memory usage and improve code efficiency.
-- Optimized memory usage by switching from `String concatenation` to `myFile.print()` for SD card writing
+- Optimized memory usage by switching from `String concatenation method` to `myFile.print()` for SD card data writing
 
 ## Removed
-- A function floatToString
+- Removed a function `floatToString()`
 
 - - - -
 
@@ -109,8 +110,8 @@
 
 The first legacy code created to support PCB device that has features:
 1. Measure 6 temperature in Celcius, 1 humidity in %RH, and its maximum values, also sound level in dB and air flow in m/s
-2. Display measurement results to HMI Nextion every 6000 ms
-3. Store measurement results to SD Card every 3000 ms
+2. Display measurement results to HMI Nextion every `6000 ms`
+3. Store measurement results to SD Card every `3000 ms`
 4. Battery level indicator
 
 ### :clipboard: Characteristics and Functions
