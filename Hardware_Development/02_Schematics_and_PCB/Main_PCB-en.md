@@ -2,19 +2,18 @@
 ## Version log
 - [V5.0.0](#v500)
 - [V4.3.0](#v430)
-- [V4.2.0](#v420)
+- [V4.2.0](#v420-second-printed-version)
 - [V4.1.0](#v410)
 - [V4.0.0](#v400)
 - [V3.0.0](#v300)
 - [V2.1.0](#v210)
 - [V2.0.0](#v200)
-- [V1.0.0](#v100) 
+- [V1.0.0](#v100-first-printed-version) 
 
 - - - -
 
-<a name="V5.0.0"></a>
-
 # V5.0.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ### :package: Description
 A more reliable device is introduced in this version:
@@ -93,9 +92,8 @@ A more reliable device is introduced in this version:
 
 - - - -
 
-<!-- <a name="V4.3.0"></a> -->
-
 # V4.3.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ### :package: Description
 Introducing 4 test points to the PCB in this version to shorten the production and inspection time. Make the cost of production more reduced at this version!
@@ -150,9 +148,8 @@ Introducing 4 test points to the PCB in this version to shorten the production a
 
 - - - -
 
-<a name="V4.2.0"></a>
-
 # V4.2.0 (Second printed version)
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ### :package: Description
 Versi 4.2.0
@@ -204,9 +201,8 @@ Versi 4.2.0
 
 - - - -
 
-<a name="V4.1.0"></a>
-
 # V4.1.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ### :package: Description
 The improvement of the fourth version that anticipate the Electromagnetic Interference by separating ground plane of AUX and all main components.
@@ -248,9 +244,8 @@ The improvement of the fourth version that anticipate the Electromagnetic Interf
 
 - - - -
 
-<a name="V4.0.0"></a>
-
 # V4.0.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ### :package: Description
 More power source for sensor is added and dedicated to power the sensor in this fourth version of Baby Incubator Tester. This improvement enables the enhancement of sensor performance and boosts its work! 
@@ -342,9 +337,8 @@ More power source for sensor is added and dedicated to power the sensor in this 
 
 - - - -
 
-<a name="V3.0.0"></a>
-
 # V3.0.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ### :package: Description
 The third version of Baby Incubator Tester provides stronger charging port that enables a simpler plug and play for recharging device.
@@ -405,9 +399,8 @@ Also this device integrates power components in one board that simplifies mass p
 
 - - - -
 
-<a name="V2.1.0"></a>
-
 # V2.1.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ### :package: Description
 Improvement of second version that enables stronger mounting in a device as the impact of Added 1 extra mounting hole
@@ -482,9 +475,8 @@ Improvement of second version that enables stronger mounting in a device as the 
 
 - - - -
 
-<a name="V2.0.0"></a>
-
 # V2.0.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ### :package: Description
 Second version of Baby Incubator Tester that has these features:
@@ -507,9 +499,8 @@ Second version of Baby Incubator Tester that has these features:
 
 - - - -
 
-<a name="V1.0.0"></a>
-
 # V1.0.0 (First printed version)
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Rustanto
 ### :package: Description
 
