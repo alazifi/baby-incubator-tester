@@ -1,14 +1,12 @@
 # HMI CODE DOCUMENTATION
 ## Version log
-- [V3.0.0](#v3.0.0)
-- [V2.1.0](#v2.1.0)
-- [V2.0.0](#v2.0.0)
-- [V2.0.0](#v2.0.0)
-- [V1.0.0](#v1.0.0) 
+- [V3.0.0](#v300-unreleased)
+- [V2.1.0](#v210)
+- [V2.0.0](#v200)
+- [V2.0.0](#v200)
+- [V1.0.0](#v100) 
 
 - - - -
-
-<a name="V3.0.0"></a>
 
 # V3.0.0 (UNRELEASED)
 #### Creator:
@@ -28,9 +26,8 @@
 
 - - - -
 
-<a name="V2.1.0"></a>
-
 # V2.1.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ## Fixed
 - Fixed highlight color in setting time 
@@ -55,9 +52,8 @@
 
 - - - -
 
-<a name="V2.0.0"></a>
-
 # V2.0.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Haidar
 ## Changed
 - **Breaking:** Changed UI layout and color theme totally
@@ -75,9 +71,8 @@
 
 - - - -
 
-<a name="V1.0.0"></a>
-
 # V1.0.0
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator: Mr. Rustanto
 ### :package: Description
 
