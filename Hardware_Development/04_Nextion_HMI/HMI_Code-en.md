@@ -1,4 +1,4 @@
-# ARDUINO CODING DOCUMENTATION
+# HMI CODE DOCUMENTATION
 ## Version log
 - [V3.0.0](#v3.0.0)
 - [V2.1.0](#v2.1.0)
@@ -12,14 +12,14 @@
 
 # V3.0.0 (UNRELEASED)
 #### Creator:
-    - Mr. Haidar
-    - Mrs. Ayu (added support for `loadingPage` and `startup` pages)
+- Mr. Haidar
+- Mrs. Ayu (added support for `loadingPage` and `startup` pages)
   
 ## Changed
 - **Breaking:** Changed data acquisition method form `wavefrom` to dymamic `line`
 - **Breaking:** Separated 4 resolutions of data sampling 
 - Changed `startup` page layout
-- Changed appearance of loading battery level
+- Changed appearance of loading battery level using `...` while loading
 
 ## Added
 - Added animated `loadingPage` page
