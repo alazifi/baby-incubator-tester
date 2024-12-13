@@ -8,7 +8,8 @@
 
 - - - -
 
-# V3.0.0 (UNRELEASED)
+# V3.0.0 (unreleased)
+<sup>[(Back to top)](#version-log)</sup>
 #### Creator:
 - Mr. Haidar
 - Mrs. Ayu (added support for `loadingPage` and `startup` pages)

@@ -151,7 +151,7 @@ float mTemp6() {
 }
 
 byte batLevel() {                                          //590 to 700
-  int batMap = map(analogRead(batPin), 446, 760, 0, 100);  //nilai 720, 760 | 450 to 720
+  int batMap = map(analogRead(batPin), 480, 720, 0, 100);  //nilai 720, 760 | 450 to 720
   batVal = min(batMap, batVal);
   if (batVal < 0) {
     return 0;

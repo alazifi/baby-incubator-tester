@@ -1,6 +1,17 @@
 # BABY INCUBATOR TESTER
 Proyek ini merupakan kerjasama antara PT. Hana Master Jaya dan PT. Fania Ersa Pratama untuk membuat suatu alat yang digunakan di bidang medis dengan fungsi untuk mengkalibrasi inkubator bayi.
 
+# KOMPATIIBLITAS VERSI
+Berikut pasangan versi yang diimplementasikan untuk menghasilkan kinerja alat yang optimal.
+
+| Versi Perangkat | Elektrik |       HMI        | Koding | Mekanik |
+|:---------------:|:--------:|:------------:|--------|---------|
+|   Belum Rilis   | [V5.0.0](Hardware_Development/02_Schematics_and_PCB/Main_PCB-en.md#v100)  |     [V3.0.0](Hardware_Development/04_Nextion_HMI/HMI_Code-en.md#v300-unreleased)      | [V4.0.0](Hardware_Development/03_Code/Arduino_Code-en.md#v400-unreleased)      | -       |
+|     Versi 4     |  -   |     -      | -      | -       |
+|     Versi 3     |  -   | - | -      | -       |
+|     Versi 2     |  -   |      -       | -      | -       |
+|     Versi 1     |  -   |     -      | -      | -       |
+
 
 Untuk dokumentasi skematik dan PCB bisa [klik disini](Hardware_Development/02_Schematics_and_PCB/Main_PCB-en.md)!
 
