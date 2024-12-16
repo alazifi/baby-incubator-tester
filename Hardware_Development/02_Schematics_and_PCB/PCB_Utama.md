@@ -1,21 +1,21 @@
 # DOKUMENTASI PCB UTAMA
-<sup>Switch to English? [Click here!](Main_PCB-in.md)</sup>
+<sup>Switch to English? [Click here!](Main_PCB.md)</sup>
 
 ## Log Versi
-- [V5.0.0](#v500-belum dirilis)
+- [V5.0.0](#v500-belum-dirilis)
 - [V4.3.0](#v430)
-- [V4.2.0](#v420-second-printed-version)
+- [V4.2.0](#v420-versi-tercetak-kedua)
 - [V4.1.0](#v410)
 - [V4.0.0](#v400)
 - [V3.0.0](#v300)
 - [V2.1.0](#v210)
 - [V2.0.0](#v200)
-- [V1.0.0](#v100-first-printed-version) 
+- [V1.0.0](#v100-versi-tercetak-pertama) 
 
 - - - -
 
 # V5.0.0 (belum dirilis)
-<sup>[(Kembali ke atas)](#Log Versi)</sup>
+<sup>[(Kembali ke atas)](#log-versi)</sup>
 
 #### Pengembang: Haidar
 ### :package: Deskripsi
@@ -28,7 +28,7 @@ Perangkat yang lebih andal diperkenalkan dalam versi ini:
 ### :clipboard: Karakteristik
 #### :hammer_and_wrench: Skematika:
 ##### Perubahan Major
-1. Mengubah modul step down `U6` menjadi modul `ADS1115` untuk memusatkan daya pada satu module step down dan mendukung pembacaan sensor `AUX`
+1. Mengubah modul stepdown `U6` menjadi modul `ADS1115` untuk memusatkan daya pada satu module stepdown dan mendukung pembacaan sensor `AUX`
 2. Mengubah `J10` 2 pin menjadi `J10` 3 pin untuk mendukung fungsi lampu indikator dari tombol saklar
 3. Menambahkan resistor *pull up* `R11` dengan nilai `10k` pada pin 14 `U1` (`PB0`) untuk mendukung fitur indikator koneksi sensor `AUX` pada `J8`
 4. Menambahkan fitur pembatas daya dengan komponen: 
@@ -96,7 +96,7 @@ Perangkat yang lebih andal diperkenalkan dalam versi ini:
 - - - -
 
 # V4.3.0
-<sup>[(Kembali ke atas)](#Log Versi)</sup>
+<sup>[(Kembali ke atas)](#log-versi)</sup>
 
 #### Pengembang: Mr. Haidar
 ### :package: Deskripsi
@@ -152,20 +152,20 @@ Memperkenalkan 4 titik uji pada PCB dalam versi ini untuk mempersingkat waktu pr
 
 - - - -
 
-# V4.2.0 (Second printed version)
-<sup>[(Kembali ke atas)](#Log Versi)</sup>
+# V4.2.0 (versi tercetak kedua)
+<sup>[(Kembali ke atas)](#log-versi)</sup>
 
 #### Pengembang: Mr. Haidar
 ### :package: Deskripsi
-The improved version than previous version
+Representasi visual komponen dan PCB yang lebih realistis diperkenalkan dalam versi ini untuk menyederhanakan pemasangan pada desain mekanis. Arsitektur sumber daya pada versi ini disesuaikan untuk mengurangi biaya pembelian komponen ke dalam papan yang siap diintegrasikan ke dalam PCB.
 
 ### :clipboard: Karakteristik
 #### :hammer_and_wrench: Skematika:
 ##### Perubahan Minor
 
 1. Mengubah simbol:
-	- Simbol IC `U5` menjadi modul step down `U5` dengan nilai `StepDownLM2596`
-	- Simbol IC `U6` menjadi modul step down `U6` dengan nilai `StepDownLM2596`
+	- Simbol IC `U5` menjadi modul stepdown `U5` dengan nilai `StepDownLM2596`
+	- Simbol IC `U6` menjadi modul stepdown `U6` dengan nilai `StepDownLM2596`
 2. Mengeliminasi komponen pendukung IC `U5` dan IC `U6`
 3. Menyesuaikan *footprint* dari simbol `U5` dan `U6`
 
@@ -207,7 +207,7 @@ The improved version than previous version
 - - - -
 
 # V4.1.0
-<sup>[(Kembali ke atas)](#Log Versi)</sup>
+<sup>[(Kembali ke atas)](#log-versi)</sup>
 
 #### Pengembang: Mr. Haidar
 ### :package: Deskripsi
@@ -246,12 +246,12 @@ Penyempurnaan versi keempat yang mengantisipasi Interferensi Elektromagnetik den
 #### :zap: PCB:
 ##### Perubahan Patch
 1. *Ground plane* `AUX` terpisah dari *ground* utama
-2. Dimensi 92,00 mm x 75,00 mm dengan penambahan lapisan potongan tepi *edge-cuts*
+2. Dimensi 92,00 mm x 75,00 mm dengan potongan tepi *edge-cuts*
 
 - - - -
 
 # V4.0.0
-<sup>[(Kembali ke atas)](#Log Versi)</sup>
+<sup>[(Kembali ke atas)](#log-versi)</sup>
 
 #### Pengembang: Mr. Haidar
 ### :package: Deskripsi
@@ -272,10 +272,10 @@ Lebih banyak sumber daya untuk sensor ditambahkan dan didedikasikan untuk member
 	| `R13`  |  `390`   |
 	| `CFF1` | `1.5 nF` |
 ##### Perubahan Minor
-1. Changed `L1` value to `47 uH` 
+1. Mengubah nilai dari simbol `L1` menjadi `47 uH` 
 
 ##### Perubahan Patch
-1. Changed References:
+1. Mengubah referensi:
 	|    V3.0.0     | V4.0.0 |
 	|:-------------:|:------:|
 	|   `1N5401`    |  `D1`  |
@@ -306,64 +306,64 @@ Lebih banyak sumber daya untuk sensor ditambahkan dan didedikasikan untuk member
 	|     `T4`      |  `J4`  |
 	|     `T3`      |  `J3`  |
 	|     `T2`      |  `J2`  |
-2. Changed value of `LM2596T-5` to `OUT-5V`
-3. Changed pin connections symbols:
+2. Mengubah nilai dari simbol `LM2596T-5` menjadi `OUT-5V`
+3. Mengubah koneksi pin dari simbol:
 	- `J7`
-		| `J7` PINS | V3.0.0 | V4.0.0  |
-		|:---------:|:------:|:-------:|
-		|     1     | `5VDC` | `7V5DC` |
+		| PIN `J7` | V3.0.0 | V4.0.0  |
+		|:--------:|:------:|:-------:|
+		|    1     | `5VDC` | `7V5DC` |
 	- `J9`
-		| `J9` PINS | V3.0.0 | V4.0.0  |
-		|:---------:|:------:|:-------:|
-		|     1     | `5VDC` | `7V5DC` |
-		|     3     | `AUX2` | `AUX1`  |
-		|     4     | `AUX1` | `AUX2`  |
+		| PIN `J9` | V3.0.0 | V4.0.0  |
+		|:--------:|:------:|:-------:|
+		|    1     | `5VDC` | `7V5DC` |
+		|    3     | `AUX2` | `AUX1`  |
+		|    4     | `AUX1` | `AUX2`  |
 	- `PCA9548A1`
-		| `PCA9548A1` PINS |   V3.0.0    |   V4.0.0    |
-		|:----------------:|:-----------:|:-----------:|
-		|    9 (`SD0`)     |   `SDA4`    | tidak terhubung |
-		|    10 (`SC0`)    |   `SCL4`    | tidak terhubung |
-		|    11 (`SD1`)    |   `SDA3`    | tidak terhubung |
-		|    12 (`SC1`)    |   `SCL3`    | tidak terhubung |
-		|    13 (`SD2`)    |   `SDA0`    |   `SDA2`    |
-		|    14 (`SC2`)    |   `SCL0`    |   `SCL2`    |
-		|    17 (`SD4`)    |   `SDA2`    |   `SDA0`    |
-		|    18 (`SC4`)    |   `SCL2`    |   `SCL0`    |
-		|    21 (`SD6`)    | tidak terhubung |   `SDA3`    |
-		|    22 (`SC6`)    | tidak terhubung |   `SCL3`    |
-		|    23 (`SD7`)    | tidak terhubung |   `SDA4`    |
-		|    24 (`SC7`)    | tidak terhubung |   `SCL4`    |
+		| PIN `PCA9548A1` |     V3.0.0      |     V4.0.0      |
+		|:---------------:|:---------------:|:---------------:|
+		|    9 (`SD0`)    |     `SDA4`      | tidak terhubung |
+		|   10 (`SC0`)    |     `SCL4`      | tidak terhubung |
+		|   11 (`SD1`)    |     `SDA3`      | tidak terhubung |
+		|   12 (`SC1`)    |     `SCL3`      | tidak terhubung |
+		|   13 (`SD2`)    |     `SDA0`      |     `SDA2`      |
+		|   14 (`SC2`)    |     `SCL0`      |     `SCL2`      |
+		|   17 (`SD4`)    |     `SDA2`      |     `SDA0`      |
+		|   18 (`SC4`)    |     `SCL2`      |     `SCL0`      |
+		|   21 (`SD6`)    | tidak terhubung |     `SDA3`      |
+		|   22 (`SC6`)    | tidak terhubung |     `SCL3`      |
+		|   23 (`SD7`)    | tidak terhubung |     `SDA4`      |
+		|   24 (`SC7`)    | tidak terhubung |     `SCL4`      |
 #### :zap: PCB:
 ##### Perubahan Major
-1. Changed dimension to 92.00 mm x 75.00 mm with edge cuts
+1. Mengubah dimensi menjadi 92,00 mm x 75,00 mm dengan potongan tepi *edge-cuts*
 
 ##### Perubahan Patch 
-1. Changed layout
-2. Added 1 mounting hole 
-3. Changed hole position with reference to the top-left corner, with the socket positioned in the bottom-right corner
+1. Mengubah tata letak
+2. Menambah 1 lubang pemasangan
+3. Mengubah posisi lubang dengan mengacu pada pojok kiri atas, dengan posisi soket di pojok kanan bawah
 
 - - - -
 
 # V3.0.0
-<sup>[(Kembali ke atas)](#Log Versi)</sup>
+<sup>[(Kembali ke atas)](#log-Versi)</sup>
 
 #### Pengembang: Mr. Haidar
 ### :package: Deskripsi
-The third version of Baby Incubator Tester provides stronger charging port that enables a simpler plug and play for recharging device.
-Also this device integrates power components in one board that simplifies mass production proccess.
+Versi ketiga dari Baby Incubator Tester menyediakan port pengisian daya yang lebih kokoh yang memungkinkan plug and play yang lebih sederhana untuk mengisi ulang perangkat.
+Perangkat ini juga mengintegrasikan komponen daya dalam satu papan sehingga menyederhanakan proses produksi massal.
 
 ### :clipboard: Karakteristik
 #### :hammer_and_wrench: Skematika:
 ##### Perubahan Major
-1. Broken down `U5` step down DC-DC module to IC and its support components:
-	|   Symbol    |    Value    |
+1. Mengurai modul stepdown DC-DC `U5` menjadi IC dan komponen  pendukungnya:
+	|   Simbol    |    Nilai    |
 	|:-----------:|:-----------:|
 	| `LM2596T-5` | `LM2596T-5` |
 	|  `1N5824`   |  `1N5824`   |
 	|    `C7`     |  `680 uF`   |
 	|    `C8`     |  `220 uF`   |
 	|    `L1`     |   `47 uH`   |
-2. Mengubah simbol and footprint of 2 pin `VDCIn1` symbol to 3 pin Jack DC symbol 
+2. Mengubah simbol dan *footprint* dari `VDCIn1` 2 pin menjadi simbol `Jack DC` 3 pin 
 ##### Perubahan Patch
 1. Mengubah referensi
 	|   V2.1.0   |    V3.0.0     |
@@ -379,45 +379,45 @@ Also this device integrates power components in one board that simplifies mass p
 	|    `U3`    |   `AMS1117`   |
 2. Mengubah koneksi pin dari simbol:
 	- `PCA9548A1`
-		| `PCA9548A1` PINS |   V2.1.0    |   V3.0.0    |
-		|:----------------:|:-----------:|:-----------:|
-		|    9 (`SD0`)     | tidak terhubung |   `SDA4`    |
-		|    10 (`SC0`)    | tidak terhubung |   `SCL4`    |
-		|    11 (`SD1`)    | tidak terhubung |   `SDA3`    |
-		|    12 (`SC1`)    | tidak terhubung |   `SCL3`    |
-		|    21 (`SD6`)    |   `SDA3`    | tidak terhubung |
-		|    22 (`SC6`)    |   `SCL3`    | tidak terhubung |
-		|    23 (`SD7`)    |   `SDA4`    | tidak terhubung |
-		|    24 (`SC7`)    |   `SCL4`    | tidak terhubung |
+		| PIN `PCA9548A1` |     V2.1.0      |     V3.0.0      |
+		|:---------------:|:---------------:|:---------------:|
+		|    9 (`SD0`)    | tidak terhubung |     `SDA4`      |
+		|   10 (`SC0`)    | tidak terhubung |     `SCL4`      |
+		|   11 (`SD1`)    | tidak terhubung |     `SDA3`      |
+		|   12 (`SC1`)    | tidak terhubung |     `SCL3`      |
+		|   21 (`SD6`)    |     `SDA3`      | tidak terhubung |
+		|   22 (`SC6`)    |     `SCL3`      | tidak terhubung |
+		|   23 (`SD7`)    |     `SDA4`      | tidak terhubung |
+		|   24 (`SC7`)    |     `SCL4`      | tidak terhubung |
 	- `Nextion1`
-		| `Nextion1` PINS | V2.1.0 | V3.0.0 |
-		|:---------------:|:------:|:------:|
-		|        2        | `5VDC` | `GND`  |
-		|        1        | `GND`  | `5VDC` |
-3. Delete all units of values
-4. Change footprint of `Battery1` from vertical JST to horizontal JST 
+		| PIN `Nextion1` | V2.1.0 | V3.0.0 |
+		|:--------------:|:------:|:------:|
+		|       2        | `5VDC` | `GND`  |
+		|       1        | `GND`  | `5VDC` |
+3. Menghapus semua satuan nilai
+4. Mengubah *footprint* `Battery1` dari JST vertical menjadi JST horizontal 
 
 #### :zap: PCB:
 ##### Perubahan Major
-1. Changed layout as the impact of the step down being broken down
-2. Changed dimension to 91.00 mm x 65.50 mm
+1. Mengubah tata letak sebagai akibat dari penguraian stepdown
+2. Mengubah dimensi menjadi 91,00 mm x 65,50 mm
 
 ##### Perubahan Minor
-1. Changed hole position
+1. Mengubah posisi lubang
 
 - - - -
 
 # V2.1.0
-<sup>[(Kembali ke atas)](#Log Versi)</sup>
+<sup>[(Kembali ke atas)](#log-versi)</sup>
 
 #### Pengembang: Mr. Haidar
 ### :package: Deskripsi
-Improvement of second version that enables stronger mounting in a device as the impact of addition of 1 extra mounting hole
+Penyempurnaan versi kedua yang memungkinkan pemasangan lebih kuat pada perangkat sebagai dampak penambahan 1 lubang pemasangan tambahan
 
 ### :clipboard: Karakteristik
 #### :hammer_and_wrench: Skematika:
 ##### Perubahan Patch
-1. Changed References
+1. Mengubah referensi
 	| V2.0.0 |    V2.1.0    |
 	|:------:|:------------:|
 	|  `U1`  | `ATMEGA328P` |
@@ -433,97 +433,97 @@ Improvement of second version that enables stronger mounting in a device as the 
 	| `J10`  |    `I2C`     |
 	| `J12`  |  `Nextion`   |
 	| `J13`  |    `AUX`     |
-2. Changed Values
+2. Mengubah nilai
 	|   V2.0.0    |  V2.1.0   |
 	|:-----------:|:---------:|
 	| `74VHC125M` |  `IC-SD`  |
 	|   `Next`    | `Nextion` |
 3. Mengubah koneksi pin dari simbol:
 	- `AUX` 
-		| `AUX` PINS | V2.0.0 | V2.1.0 |
-		|:----------:|:------:|:------:|
-		|     3      | `AUX1` | `AUX2` |
-		|     4      | `AUX2` | `AUX1` |
+		| PIN `AUX` | V2.0.0 | V2.1.0 |
+		|:---------:|:------:|:------:|
+		|     3     | `AUX1` | `AUX2` |
+		|     4     | `AUX2` | `AUX1` |
 	- `I2C`
-		| `I2C` PINS | V2.0.0 | V2.1.0 |
-		|:----------:|:------:|:------:|
-		|     3      | `SDA`  | `SCL`  |
-		|     4      | `SCL`  | `SDA`  |
+		| PIN `I2C` | V2.0.0 | V2.1.0 |
+		|:---------:|:------:|:------:|
+		|     3     | `SDA`  | `SCL`  |
+		|     4     | `SCL`  | `SDA`  |
 	- `Nextion`
-		| `I2C` PINS | V2.0.0 | V2.1.0 |
-		|:----------:|:------:|:------:|
-		|     1      | `5VDC` | `SCL`  |
-		|     2      |  `RX`  | `5VDC` |
-		|     4      | `GND`  |  `RX`  |
+		| PIN `I2C` | V2.0.0 | V2.1.0 |
+		|:---------:|:------:|:------:|
+		|     1     | `5VDC` | `SCL`  |
+		|     2     |  `RX`  | `5VDC` |
+		|     4     | `GND`  |  `RX`  |
 	- `PCA9548A`
-		| `PCA9548A` PINS |   V2.0.0    |   V2.1.0    |
-		|:---------------:|:-----------:|:-----------:|
-		|    9 (`SD0`)    |   `SDA0`    | tidak terhubung |
-		|   10 (`SC0`)    |   `SCL0`    | tidak terhubung |
-		|   11 (`SD1`)    |   `SDA1`    | tidak terhubung |
-		|   12 (`SC1`)    |   `SCL1`    | tidak terhubung |
-		|   13 (`SD2`)    |   `SDA2`    |   `SDA0`    |
-		|   14 (`SC2`)    |   `SCL2`    |   `SCL0`    |
-		|   15 (`SD3`)    |   `SDA3`    |   `SDA1`    |
-		|   16 (`SC3`)    |   `SCL3`    |   `SCL1`    |
-		|   17 (`SD4`)    |   `SDA4`    |   `SDA2`    |
-		|   18 (`SC4`)    |   `SCL4`    |   `SCL2`    |
-		|   19 (`SD6`)    | tidak terhubung |   `SDA3`    |
-		|   20 (`SC6`)    | tidak terhubung |   `SCL3`    |
-		|   21 (`SD7`)    | tidak terhubung |   `SDA4`    |
-		|   22 (`SC7`)    | tidak terhubung |   `SCL4`    |
+		| PIN `PCA9548A` |     V2.0.0      |     V2.1.0      |
+		|:--------------:|:---------------:|:---------------:|
+		|   9 (`SD0`)    |     `SDA0`      | tidak terhubung |
+		|   10 (`SC0`)   |     `SCL0`      | tidak terhubung |
+		|   11 (`SD1`)   |     `SDA1`      | tidak terhubung |
+		|   12 (`SC1`)   |     `SCL1`      | tidak terhubung |
+		|   13 (`SD2`)   |     `SDA2`      |     `SDA0`      |
+		|   14 (`SC2`)   |     `SCL2`      |     `SCL0`      |
+		|   15 (`SD3`)   |     `SDA3`      |     `SDA1`      |
+		|   16 (`SC3`)   |     `SCL3`      |     `SCL1`      |
+		|   17 (`SD4`)   |     `SDA4`      |     `SDA2`      |
+		|   18 (`SC4`)   |     `SCL4`      |     `SCL2`      |
+		|   19 (`SD6`)   | tidak terhubung |     `SDA3`      |
+		|   20 (`SC6`)   | tidak terhubung |     `SCL3`      |
+		|   21 (`SD7`)   | tidak terhubung |     `SDA4`      |
+		|   22 (`SC7`)   | tidak terhubung |     `SCL4`      |
 #### :zap: PCB:
 ##### Perubahan Minor
-1. Added 1 hole for mounting
-2. Changed layout
-3. Changed dimension to 94.23 mm x 75.00 mm
+1. Menambah 1 lubang untuk pemasangan
+2. Menambah tata letak
+3. Mengubah dimensi menjadi 94,23 mm x 75,00 mm
 
 ##### Perubahan Patch
-1. Mengubah referensi, values, nets, and footprints corresponds to schematics
-2. Added ground plane
+1. Mengubah referensi, nilai, net, dan *footprint* berdasarkan skematika
+2. Menambahkan *ground plane*
 
 - - - -
 
 # V2.0.0
-<sup>[(Kembali ke atas)](#Log Versi)</sup>
+<sup>[(Kembali ke atas)](#log-versi)</sup>
 
 #### Pengembang: Mr. Haidar
 ### :package: Deskripsi
-Second version of Baby Incubator Tester that has these features:
-1. More secured firmware because the development port is no longer available since this version launched
-2. More stable data tracking as the impact of SD card buffer
-3. Easier to inspect schematic documents
+Baby Incubator Tester versi kedua yang memiliki fitur berikut:
+1. Firmware lebih aman karena port pengembangan tidak lagi tersedia sejak versi ini diluncurkan
+2. Pelacakan data lebih stabil akibat buffer kartu SD
+3. Lebih mudah untuk memeriksa dokumen skematika
 
 ### :clipboard: Karakteristik
 #### :hammer_and_wrench: Skematika:
-1. Changed the wiring method from using green wires to global labels
-2. Mengubah simbols, references, and values of all components
-3. Changed pin connections between components
-4. Assigned new footprint to the new symbols
-5. Added component symbol `74VHC125M` to support data storage to the SD card
+1. Mengubah metode pengkabelan dari menggunakan kabel hijau menjadi label global
+2. Mengubah simbol, acuan, dan nilai seluruh komponen
+3. Perubahan pin koneksi antar komponen
+4. Menetapkan jejak baru pada simbol baru
+5. Menambahkan simbol komponen `74VHC125M` untuk mendukung penyimpanan data ke kartu SD
 
 #### :zap: PCB:
-1. Changed dimension to 93.88 mm x 75,00 mm
-2. Changed layout
-3. Eliminated dedicated port for uploading program
+1. Mengunah dimensi menjadi 93,88 mm x 75,00 mm
+2. Mengubah tata letak
+3. Menghilangkan port khusus untuk mengunggah program
 
 - - - -
 
-# V1.0.0 (First printed version)
-<sup>[(Kembali ke atas)](#Log Versi)</sup>
-#### Pengembang: Mr. Rustanto
+# V1.0.0 (versi tercetak pertama)
+<sup>[(Kembali ke atas)](#log-versi)</sup>
+#### Pengembang: Rustanto
 ### :package: Deskripsi
 
-The legacy system version of Fania Ersa's PCB that has features:
-1. 6 probes of temperature measurement based on `HTU21D`
-2. 1 Human Machine Interface using Nextion `NX4827K043`
-3. 1 x micro SD slot to store measurement data 
-4. Rechargeable device using 12V/2A adapter
+Versi sistem lama dari PCB Fania Ersa yang memiliki fitur:
+1. 6 probe pengukuran suhu berbasis `HTU21D`
+2. 1 Antarmuka Mesin Manusia menggunakan Nextion `NX4827K043`
+3. 1 x slot micro SD untuk menyimpan data pengukuran 
+4. Perangkat isi ulang menggunakan adaptor 12V/2A
 
 ### :clipboard: Karakteristik
 
 #### :hammer_and_wrench: Skematika:
-1. Uses green colored wire to connect between components
+1. Menggunakan kabel berwarna hijau untuk menghubungkan antar komponen
 #### :zap: PCB:
-1. Dimension is 128.5 mm x 74.3 mm
-2. Dedicated port for uploading program
+1. Dimensi PCB adalah 128,5 mm x 74,3 mm
+2. Terdapat port khusus untuk mengunggah program

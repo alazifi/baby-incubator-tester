@@ -1,5 +1,5 @@
 # MAIN PCB DOCUMENTATION
-<sup>Ganti ke Bahasa Indonesia? [Klik disini!](Main_PCB-in.md)</sup>
+<sup>Ganti ke Bahasa Indonesia? [Klik disini!](PCB_Utama.md)</sup>
 
 ## Version Log
 - [V5.0.0](#v500-unreleased)
@@ -157,12 +157,11 @@ Introducing 4 test points to the PCB in this version to shorten the production a
 
 #### Developer: Mr. Haidar
 ### :package: Description
-The improved version than previous version
+A more realistic visual representation of components and PCB is introduced in this version to simplify fitting to mechanical designs. The resource architecture in this version is adjusted to reduce the cost of purchasing components into boards that are ready to be integrated into a PCB.
 
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
 ##### Minor Changes
-
 1. Changed symbol:
 	- IC `U5` symbol to step down module `U5` with value `StepDownLM2596`
 	- IC `U6` symbol to step down module `U6` with value `StepDownLM2596`
@@ -272,7 +271,7 @@ More power source for sensor is added and dedicated to power the sensor in this 
 	| `R13`  |  `390`   |
 	| `CFF1` | `1.5 nF` |
 ##### Minor Changes
-1. Changed `L1` value to `47 uH` 
+1. Changed `L1` symbol value to `47 uH` 
 
 ##### Patch Changes
 1. Changed References:
@@ -363,7 +362,7 @@ Also this device integrates power components in one board that simplifies mass p
 	|    `C7`     |  `680 uF`   |
 	|    `C8`     |  `220 uF`   |
 	|    `L1`     |   `47 uH`   |
-2. Changed symbol and footprint of 2 pin `VDCIn1` symbol to 3 pin Jack DC symbol 
+2. Changed symbol and footprint of 2 pin `VDCIn1` symbol to 3 pin `Jack DC` symbol 
 ##### Patch Changes
 1. Changed references
 	|   V2.1.0   |    V3.0.0     |
@@ -523,7 +522,7 @@ The legacy system version of Fania Ersa's PCB that has features:
 ### :clipboard: Characteristics
 
 #### :hammer_and_wrench: Schematic:
-1. Uses green colored wire to connect between components
+1. Used green colored wire to connect between components
 #### :zap: PCB:
 1. Dimension is 128.5 mm x 74.3 mm
 2. Dedicated port for uploading program

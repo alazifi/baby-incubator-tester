@@ -1,5 +1,7 @@
 # ARDUINO CODING DOCUMENTATION
-## Version log
+<sup>Ganti ke Bahasa Indonesia? [Klik disini!](Kode_Arduino.md)</sup>
+
+## Version Log
 - [V4.0.0](#v400-unreleased)
 - [V3.0.0](#v300)
 - [V2.1.0](#v210)
@@ -11,8 +13,8 @@
 
 # V4.0.0 (unreleased)
 <sup>[(Back to top)](#version-log)</sup>
-#### Creator: Mr. Haidar
-## Changed
+
+#### Developer: Haidar
 ## Added
 - **Breaking:** Added `sensIndicator` pin
 - **Breaking:** Added `limiter` pin
@@ -21,9 +23,10 @@
 
 # V3.0.0
 <sup>[(Back to top)](#version-log)</sup>
-#### Creator: Mr. Haidar
+
+#### Developer: Haidar
 ## Changed
-- **Breaking:** Changed the calculation method from `mapping method` to `Analog to Digital convertion method` for functions `soundLevel()` and `airSpeed()` 
+- **Breaking:** Changed the calculation method from `mapping method` to `analog to digital convertion method` for functions `soundLevel()` and `airSpeed()` 
 - Changed initial value of `count` form `-3` to `-4`
 - Changed pin number of `CS` from `4` to `10`
 - Changed first time of data update to HMI Nextion to `8000 ms` after device boot up
@@ -32,8 +35,8 @@
 - Changed logic in `dataCore()` function following the value of `count`
 
 ## Added
-- Added library `"ADS1X15.h"` to interfacing AUX sensor
-- Added unsigned long variables 
+- Added library `"ADS1X15.h"` to interfacing `AUX` sensor
+- Added `unsigned long` type variables 
 - Added variable `logTime`
 - Added special character `\n` to `dataLable()` function
 
@@ -44,7 +47,8 @@
 
 # V2.1.0
 <sup>[(Back to top)](#version-log)</sup>
-#### Creator: Mr. Haidar
+
+#### Developer: Haidar
 ## Changed
 - Changed initial value of `count` to `-3`
 - Changed the global variable `dataFile` to a local variable
@@ -71,26 +75,23 @@
 
 - - - -
 
-<a name="V2.0.0"></a>
-
 # V2.0.0
-#### Creator: Mr. Haidar
+<sup>[(Back to top)](#version-log)</sup>
+
+#### Developer: Haidar
 ## Changed
 - **Breaking:** renamed all variables, constants, and functions
 - **Breaking:** changed some variables to functions
 ## Removed
 - Removed the `"String.h"` library
-- **considered to be removed** Removed variables of `BattValue`, `chgFlag`, `ChgState`, `prevMillis2`, `temp10`, `temp20`, `temp30`, `temp40`, `temp50`, 
-`temp60`, `SoundLevel`, `SpeedLevel`, `buffer[]`, `MaxTemp10`,
-`MaxTemp20`, `MaxTemp30`, `MaxTemp40`, `MaxTemp50`, `MaxTemp60`,
-`var[]`,`humid5`,`DataSensor[]`,`flag`, `battcalc` 
-- Removed function `readSensor()`, and `appendStr()`
+- Removed some variables and functions
 
 - - - -
 
 # V1.1.0
 <sup>[(Back to top)](#version-log)</sup>
-#### Creator: Mr. Haidar
+
+#### Developer: Haidar
 ## Changed
 - Replaced the use of a variable for the `header string constant` with a direct string literal in `Serial.println()` to optimize memory usage and improve code efficiency.
 - Optimized memory usage by switching from `String concatenation method` to `myFile.print()` for SD card data writing
@@ -102,7 +103,7 @@
 
 # V1.0.0
 <sup>[(Back to top)](#version-log)</sup>
-#### Creator: Mr. Rustanto
+#### Developer: Rustanto
 ### :package: Description
 
 The first legacy code created to support PCB device that has features:
