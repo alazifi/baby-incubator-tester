@@ -36,7 +36,7 @@
 #### Pengembang: Haidar
 
 ## Diperbaiki
-- Memperbaiki warna highlight dalam pengaturan waktu 
+- Memperbaiki warna sorot dalam pengaturan waktu 
 
 ## Ditambahkan
 - Menambahkan tombol akses ke halaman `wiringGuide2` di halaman `windSound`
@@ -46,7 +46,7 @@
 - Menambahkan indikator warna pengukuran suhu
 
 ## Berubah
-- Mengubah halaman `startup`
+- Mengubah desain halaman `startup`
 - Mengubah tata letak tombol pada halaman `home`
 - Mengubah `batLev` sebagai indikator baterai dari `local vscope` menjadi `global vscope`
 - Mengubah format waktu dari 2 baris menjadi 1 baris `dd/mm/yyyy HH:MM:ss`
@@ -63,16 +63,16 @@
 
 #### Pengembang: Haidar
 ## Diubah
-- **Perubahan besar:** mengubah tata letak antarmuka dan tema warna sepenuhnya
-- **Perubahan besar:** gambar-gambar di panel `Picture` dikhususkan untuk satu halaman atau satu halaman efek per gambar, bukan untuk ikon
-- **Perubahan besar:** halaman-halaman di panel `Page` diganti namanya menjadi sesuai dengan fungsinya
+- **Perubahan besar:** Mengubah tata letak antarmuka dan tema warna sepenuhnya
+- **Perubahan besar:** Gambar-gambar di panel `Picture` dikhususkan untuk satu halaman atau satu halaman efek per gambar, bukan untuk ikon
+- **Perubahan besar:** Halaman-halaman di panel `Page` diganti namanya menjadi sesuai dengan fungsinya
 - Mengubah nilai terendah penggeser menjadi 20% dengan kecerahan 20%
 - Mengubah tampilan waktu dari berjalan menjadi beku saat pengguna menyesuaikan pengaturan waktu
 
 ## Ditambahkan
 - **Perubahan besar:** Menambahkan opsi untuk menangkap tren suhu dan streaming saja
 
-## DIHAPUS
+## Dihapus
 - Menghapus fitur indikator pengisian daya
 - Menghapus fitur indikator baterai lemah
 

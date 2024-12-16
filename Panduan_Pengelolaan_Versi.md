@@ -1,4 +1,4 @@
-## Panduan Pengelolaan Versi
+# Panduan Pengelolaan Versi
 
 <sup>Switch to English? [Click here!](Versioning_Guide.md)</sup>
 

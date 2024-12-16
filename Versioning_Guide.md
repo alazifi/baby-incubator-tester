@@ -1,4 +1,4 @@
-## Versioning Guide
+# Versioning Guide
 <sup>Ganti ke Bahasa Indonesia? [Klik disini!](Panduan_Pengelolaan_Versi.md)</sup>
 
 All notable changes to this project will adhere this versioning system. For detailed information, check [semantic versioning](https://semver.org/spec/v2.0.0.html).
