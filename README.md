@@ -2,6 +2,8 @@
 Proyek ini merupakan kerjasama antara PT. Hana Master Jaya dan PT. Fania Ersa Pratama untuk membuat suatu alat yang digunakan di bidang medis dengan fungsi untuk mengkalibrasi inkubator bayi.
 
 # KOMPATIBILITAS VERSI
+<sup>Untuk detail panduan pengelolaan versi [klik disini.](Panduan_Pengelolaan_Versi.md)</sup>
+
 Berikut pasangan versi yang diimplementasikan untuk menghasilkan kinerja alat yang optimal.
 
 | Versi Perangkat |                                 Elektrik                                 |                                     HMI                                      | Koding                                                                    | Mekanik |
@@ -13,37 +15,15 @@ Berikut pasangan versi yang diimplementasikan untuk menghasilkan kinerja alat ya
 |     Versi 1     |                                    -                                     |                                      -                                       | -                                                                         | -       |
 
 
-Untuk dokumentasi skematik dan PCB bisa [klik disini](Hardware_Development/02_Schematics_and_PCB/Main_PCB-en.md)!
+Untuk dokumentasi skematik dan PCB bisa [klik disini](Hardware_Development/02_Schematics_and_PCB/PCB_Utama.md)!
 
-Untuk dokumentasi koding Arduino bisa [klik disini](Hardware_Development/03_Code/Arduino_Code-en.md)!
+Untuk dokumentasi koding Arduino bisa [klik disini](Hardware_Development/03_Code/Kode_Arduino.md)!
 
-Untuk dokumentasi UI dari HMI Nextion bisa [klik disini](Hardware_Development/04_Nextion_HMI/HMI_Code-en.md)!
+Untuk dokumentasi UI dari HMI Nextion bisa [klik disini](Hardware_Development/04_Nextion_HMI/Desain_HMI.md)!
 
-## Guide for Versioning
-Semantic versioning uses this format:
-```bash
-X.Y.Z
-```
-that corresponds to
-```bash
-MAJOR.MINOR.PATCH
-```
-Details:
-1. **MAJOR** indicates major changes that are incompatible with previous versions.
-	- Example: Redesigning new architecture and changing the core functionality
-	- Increment: `1.0.0` &rarr; `2.0.0`
 
-2. **MINOR** indicates changes that are backward-compatible with the addition of new features
-	- Example: Adding new sensor
-	- Increment: `1.1.0` &rarr; `1.2.0`
 
-3. **PATCH** indicates minor changes that do not add new features but solve issues or optimize existing functionalities
-	- Example: Bug fixing, replacing faulty component
-	- Increment: `1.1.1` &rarr; `1.1.2`
-
-<a name="directory_structure"></a>
-
-## Directory Structure
+## Struktur Direktori Proyek
 
 ```bash
 project/
