@@ -11,7 +11,7 @@ String endChar = "\xFF\xFF\xFF";
 int batPin = A0;
 int airSpeedPin = A1;
 int soundPin = A2;
-int sensIndicator = 
+// int sensIndicator = 
 
 int chgPin = 7;
 int count = -4;
@@ -163,7 +163,7 @@ byte batLevel() {                                          //590 to 700
 }
 
 int soundLevel() {
-  return ADS.readADC(0);
+  return 0;//ADS.readADC(0);
 }
 
 bool chgState() {
@@ -171,7 +171,7 @@ bool chgState() {
 }
 
 float airSpeed() {
-  return ADS.readADC(1);
+  return 0;//ADS.readADC(1);
 }
 
 void upTemp1(float temp1) {

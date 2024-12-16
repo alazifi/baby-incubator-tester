@@ -1,7 +1,7 @@
 # MAIN PCB DOCUMENTATION
-<sup>Need in Indonesian? [click here!](Main_PCB-in.md)</sup>
+<sup>Ganti ke Bahasa Indonesia? [Klik disini!](Main_PCB-in.md)</sup>
 
-## Version log
+## Version Log
 - [V5.0.0](#v500-unreleased)
 - [V4.3.0](#v430)
 - [V4.2.0](#v420-second-printed-version)
@@ -17,7 +17,7 @@
 # V5.0.0 (unreleased)
 <sup>[(Back to top)](#version-log)</sup>
 
-#### Creator: Haidar
+#### Developer: Haidar
 ### :package: Description
 A more reliable device is introduced in this version:
 1. Centralized the power of all components into a single power source `5VDC`, so `7.5 VDC` sensor is no longer introduced in this version.
@@ -28,9 +28,9 @@ A more reliable device is introduced in this version:
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
 ##### Major Changes
-1. Changed module step down `U6` to `ADS1115` module to centralized the power and support the read of `AUX` sensor
-2. Changed 2 pin `J10` to 3 pin `J10` to support the function of indicator lamp on the switch 
-3. Added pull up resistor `R11` with value `10k` at pin 14 `U1` (`PB0`) to support feature of connection indicator of `AUX` Sensor (``J8``)
+1. Changed step down module `U6` to `ADS1115` module to centralized the power into one step down module and support the read of `AUX` sensor
+2. Changed 2 pin `J10` to 3 pin `J10` to support the function of indicator lamp on the switch button
+3. Added pull up resistor `R11` with value `10k` at pin 14 `U1` (`PB0`) to support feature of connection indicator of `AUX` sensor on `J8`
 4. Added power limiter feature with components: 
 	- `Q1` symbol with value `BD140`
 		- Base as trigger from input pin 15 `U1` (`PB1`) 
@@ -98,7 +98,7 @@ A more reliable device is introduced in this version:
 # V4.3.0
 <sup>[(Back to top)](#version-log)</sup>
 
-#### Creator: Mr. Haidar
+#### Developer: Mr. Haidar
 ### :package: Description
 Introducing 4 test points to the PCB in this version to shorten the production and inspection time. Make the cost of production more reduced at this version!
 
@@ -155,7 +155,7 @@ Introducing 4 test points to the PCB in this version to shorten the production a
 # V4.2.0 (Second printed version)
 <sup>[(Back to top)](#version-log)</sup>
 
-#### Creator: Mr. Haidar
+#### Developer: Mr. Haidar
 ### :package: Description
 The improved version than previous version
 
@@ -209,7 +209,7 @@ The improved version than previous version
 # V4.1.0
 <sup>[(Back to top)](#version-log)</sup>
 
-#### Creator: Mr. Haidar
+#### Developer: Mr. Haidar
 ### :package: Description
 The improvement of the fourth version that anticipate the Electromagnetic Interference by separating ground plane of `AUX` and all main components.
 
@@ -237,7 +237,7 @@ The improvement of the fourth version that anticipate the Electromagnetic Interf
 	|     4     |    `SCL`     |
 	|     5     |    `SDA`     |
 ##### Patch Changes
-1. Changed `U5` symbol as fixed stepdown to adjustable stepdown
+1. Changed `U5` symbol as fixed output stepdown to adjustable output stepdown
 2. Changed references:
 	| V4.0.0 | V4.1.0 |
 	|:------:|:------:|
@@ -246,21 +246,21 @@ The improvement of the fourth version that anticipate the Electromagnetic Interf
 #### :zap: PCB:
 ##### Patch Changes
 1. `AUX`'s ground plane separated from main ground plane
-2. Dimension of 92.00 mm x 75.00 mm with edge cuts layer
+2. Dimension of 92.00 mm x 75.00 mm with edge cuts layer addition
 
 - - - -
 
 # V4.0.0
 <sup>[(Back to top)](#version-log)</sup>
 
-#### Creator: Mr. Haidar
+#### Developer: Mr. Haidar
 ### :package: Description
 More power source for sensor is added and dedicated to power the sensor in this fourth version of Baby Incubator Tester. This improvement enables the enhancement of sensor performance and boosts its work! 
 
 ### :clipboard: Characteristics
 #### :hammer_and_wrench: Schematic:
 ##### Major Changes
-1. Added U6 with value `OUT-7,5V` as power source of `7.5 V` sensor and its support components:
+1. Added `U6` symbol with value `OUT-7,5V` as power source of `7.5 V` sensor and its support components:
 	| Symbol |  Value   |
 	|:------:|:--------:|
 	|  `D2`  | `1N5835` |
@@ -347,7 +347,7 @@ More power source for sensor is added and dedicated to power the sensor in this 
 # V3.0.0
 <sup>[(Back to top)](#version-log)</sup>
 
-#### Creator: Mr. Haidar
+#### Developer: Mr. Haidar
 ### :package: Description
 The third version of Baby Incubator Tester provides stronger charging port that enables a simpler plug and play for recharging device.
 Also this device integrates power components in one board that simplifies mass production proccess.
@@ -410,7 +410,7 @@ Also this device integrates power components in one board that simplifies mass p
 # V2.1.0
 <sup>[(Back to top)](#version-log)</sup>
 
-#### Creator: Mr. Haidar
+#### Developer: Mr. Haidar
 ### :package: Description
 Improvement of second version that enables stronger mounting in a device as the impact of addition of 1 extra mounting hole
 
@@ -487,7 +487,7 @@ Improvement of second version that enables stronger mounting in a device as the 
 # V2.0.0
 <sup>[(Back to top)](#version-log)</sup>
 
-#### Creator: Mr. Haidar
+#### Developer: Mr. Haidar
 ### :package: Description
 Second version of Baby Incubator Tester that has these features:
 1. More secured firmware because the development port is no longer available since this version launched
@@ -511,7 +511,7 @@ Second version of Baby Incubator Tester that has these features:
 
 # V1.0.0 (First printed version)
 <sup>[(Back to top)](#version-log)</sup>
-#### Creator: Mr. Rustanto
+#### Developer: Mr. Rustanto
 ### :package: Description
 
 The legacy system version of Fania Ersa's PCB that has features:
