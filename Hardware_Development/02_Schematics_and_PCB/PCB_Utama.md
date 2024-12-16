@@ -51,42 +51,42 @@ Perangkat yang lebih andal diperkenalkan dalam versi ini:
 	|    4     |  `SCL`  |      `GND`       |
 	|    5     |  `SDA`  |     `5VDCL`      |
 2. Mengubah tata letak teks
-3. Changed connections
+3. Mengubah koneksi
 	- `U1`
-		|  `U1` PINS  | V4.2.0 | V5.0.0  |
+		|  PIN `U1`   | V4.2.0 | V5.0.0  |
 		|:-----------:|:------:|:-------:|
 		|  7 (`VCC`)  | `5VDC` | `5VDCB` |
 		| 20 (`AVCC`) | `5VDC` | `5VDCB` |
-	- `5VDC` connection at pin 3 `U2` (`VI`) to `5VDCL`
-	- `5VDC` connection at pin 4 `U5` (`OUT+`) to `5VDCB`
-4. Changed hole position 			
-5. Changed value of `IC-SD` to `74HCT125`
+	- Koneksi `5VDC` pada `U2` (`VI`) pin 3 menjadi `5VDCL`
+	- Koneksi `5VDC` pada `U5` (`OUT+`) pin 4 menjadi `5VDCB`
+4. Mengubah posisi lubang 			
+5. Mengubah nilai `IC-SD` menjadi `74HCT125`
 
 ##### Perubahan Patch:
 
-1. Eliminated `TP4` symbol
-2. Added unit for all values
+1. Mengeliminasi simbol `TP4`
+2. Menambahkan satuan untuk semua nilai
 3. Mengubah koneksi pin dari simbol:
 	- `J7`
-		| `J7` PINS | V4.2.0 | V5.0.0  |
-		|:---------:|:------:|:-------:|
-		|     1     | `GND`  | `5VDCL` |
-		|     4     | `5VDC` |  `GND`  |
+		| PIN `J7` | V4.2.0 | V5.0.0  |
+		|:--------:|:------:|:-------:|
+		|    1     | `GND`  | `5VDCL` |
+		|    4     | `5VDC` |  `GND`  |
 	- `PCA9548A`
-		| `PCA9548A` PINS | V4.2.0 | V5.0.0 |
-		|:---------------:|:------:|:------:|
-		|   13 (`SD2`)    | `SDA2` | `SDA0` |
-		|   14 (`SC2`)    | `SCL2` | `SCL0` |
-		|   15 (`SD3`)    | `SDA1` | `SDA1` |
-		|   16 (`SC3`)    | `SCL1` | `SCL1` |
-		|   17 (`SD4`)    | `SDA0` | `SDA2` |
-		|   18 (`SC4`)    | `SCL0` | `SCL2` |
-		|   19 (`SD5`)    | `SDA5` | `SDA3` |
-		|   20 (`SC5`)    | `SCL5` | `SCL3` |
-		|   21 (`SD6`)    | `SDA3` | `SDA4` |
-		|   22 (`SC6`)    | `SCL3` | `SCL4` |
-		|   23 (`SD7`)    | `SDA4` | `SDA5` |
-		|   24 (`SC7`)    | `SCL4` | `SCL5` |
+		| PIN `PCA9548A` | V4.2.0 | V5.0.0 |
+		|:--------------:|:------:|:------:|
+		|   13 (`SD2`)   | `SDA2` | `SDA0` |
+		|   14 (`SC2`)   | `SCL2` | `SCL0` |
+		|   15 (`SD3`)   | `SDA1` | `SDA1` |
+		|   16 (`SC3`)   | `SCL1` | `SCL1` |
+		|   17 (`SD4`)   | `SDA0` | `SDA2` |
+		|   18 (`SC4`)   | `SCL0` | `SCL2` |
+		|   19 (`SD5`)   | `SDA5` | `SDA3` |
+		|   20 (`SC5`)   | `SCL5` | `SCL3` |
+		|   21 (`SD6`)   | `SDA3` | `SDA4` |
+		|   22 (`SC6`)   | `SCL3` | `SCL4` |
+		|   23 (`SD7`)   | `SDA4` | `SDA5` |
+		|   24 (`SC7`)   | `SCL4` | `SCL5` |
 1. Mengubah nilai
 	|      V4.2.0      |      V4.2.0      |
 	|:----------------:|:----------------:|
